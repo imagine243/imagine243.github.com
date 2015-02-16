@@ -9,5 +9,5 @@ http://imagine243.github.io/rss.xml
 http://imagine243.github.io/sitemap.txt
 http://imagine243.github.io/tags.html
 
-http://imagine243.github.io/2015/02/16/first
+http://imagine243.github.io/test/2015/02/16/first
 http://imagine243.github.io/lessons/2011/12/29/jekyll-introduction

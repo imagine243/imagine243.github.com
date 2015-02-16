@@ -5,17 +5,18 @@
         <description>imagine243 - imagine243</description>
         <link>http://imagine243.github.io</link>
         <link>http://imagine243.github.io</link>
-        <lastBuildDate>2015-02-16T20:37:18+08:00</lastBuildDate>
-        <pubDate>2015-02-16T20:37:18+08:00</pubDate>
+        <lastBuildDate>2015-02-16T20:53:33+08:00</lastBuildDate>
+        <pubDate>2015-02-16T20:53:33+08:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>first</title>
                 <description>
+&lt;h1 id=&quot;section&quot;&gt;第一篇文章&lt;/h1&gt;
 </description>
-                <link>http://imagine243.github.io/2015/02/16/first</link>
-                <guid>http://imagine243.github.io/2015/02/16/first</guid>
+                <link>http://imagine243.github.io/test/2015/02/16/first</link>
+                <guid>http://imagine243.github.io/test/2015/02/16/first</guid>
                 <pubDate>2015-02-16T00:00:00+08:00</pubDate>
         </item>
 
