@@ -10,4 +10,5 @@ http://imagine243.github.io/rss.xml
 http://imagine243.github.io/sitemap.txt
 http://imagine243.github.io/tags.html
 
+http://imagine243.github.io/2015/03/15/markdown
 http://imagine243.github.io/2015/03/15/
