@@ -5,28 +5,32 @@
         <description>imagine243 - imagine243</description>
         <link>http://imagine243.github.io</link>
         <link>http://imagine243.github.io</link>
-        <lastBuildDate>2015-03-15T15:41:03+08:00</lastBuildDate>
-        <pubDate>2015-03-15T15:41:03+08:00</pubDate>
+        <lastBuildDate>2015-03-15T15:56:19+08:00</lastBuildDate>
+        <pubDate>2015-03-15T15:56:19+08:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>second</title>
+                <title>第一篇博客</title>
                 <description>
-</description>
-                <link>http://imagine243.github.io/2015/03/15/second</link>
-                <guid>http://imagine243.github.io/2015/03/15/second</guid>
-                <pubDate>2015-03-15T00:00:00+08:00</pubDate>
-        </item>
+&lt;h4 id=&quot;section&quot;&gt;记录&lt;/h4&gt;
+&lt;p&gt;经过一天的整理，终于把博客建立起来。&lt;/p&gt;
 
-        <item>
-                <title>first</title>
-                <description>
-&lt;h1 id=&quot;section&quot;&gt;第一篇文章&lt;/h1&gt;
+&lt;p&gt;github jekyll博客是把jekyll生成的网页放在github上，然后就可以访问了。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllbootstrap.com/usage/jekyll-quick-start.html&quot;&gt;jekyll 的帮助地址&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;section-1&quot;&gt;写博客的操作流程&lt;/h4&gt;
+&lt;p&gt;1 &lt;code&gt;$ rake post title=&quot;博客名称&quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;2 编辑博客&lt;/p&gt;
+
+&lt;p&gt;3 &lt;code&gt;$./deploy.sh&lt;/code&gt;&lt;/p&gt;
+
 </description>
-                <link>http://imagine243.github.io/test/2015/02/16/first</link>
-                <guid>http://imagine243.github.io/test/2015/02/16/first</guid>
-                <pubDate>2015-02-16T00:00:00+08:00</pubDate>
+                <link>http://imagine243.github.io/2015/03/15/</link>
+                <guid>http://imagine243.github.io/2015/03/</guid>
+                <pubDate>2015-03-15T00:00:00+08:00</pubDate>
         </item>
 
 
