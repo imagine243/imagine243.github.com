@@ -4,10 +4,10 @@ http://imagine243.github.io/atom.xml
 http://imagine243.github.io/categories.html
 http://imagine243.github.io/first_page.html
 http://imagine243.github.io/index.html
+http://imagine243.github.io/index%E5%89%AF%E6%9C%AC.html
 http://imagine243.github.io/pages.html
 http://imagine243.github.io/rss.xml
 http://imagine243.github.io/sitemap.txt
 http://imagine243.github.io/tags.html
 
 http://imagine243.github.io/test/2015/02/16/first
-http://imagine243.github.io/lessons/2011/12/29/jekyll-introduction
