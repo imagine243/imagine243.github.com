@@ -5,8 +5,8 @@
         <description>imagine243 - imagine243</description>
         <link>http://imagine243.github.io</link>
         <link>http://imagine243.github.io</link>
-        <lastBuildDate>2015-03-15T18:57:20+08:00</lastBuildDate>
-        <pubDate>2015-03-15T18:57:20+08:00</pubDate>
+        <lastBuildDate>2015-03-18T22:02:36+08:00</lastBuildDate>
+        <pubDate>2015-03-18T22:02:36+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -88,6 +88,45 @@
 &lt;pre&gt;&lt;code&gt;&amp;gt;一盏灯， 一片昏黄； 一简书， 一杯淡茶。 守着那一份淡定， 品读属于自己的寂寞。 保持淡定， 才能欣赏 &amp;gt;一盏灯， 一片昏黄； 一简书， 一杯淡茶。 守着那一份淡定， 品读属于自己的寂寞。 保持淡定， 才能欣赏
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;h3 id=&quot;section-5&quot;&gt;粗体和斜体&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;*斜体* **粗体** *斜体* **粗体**
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-6&quot;&gt;表格&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;dog | bird | cat
+----|------|----
+foo | foo  | foo
+bar | bar  | bar
+baz | baz  | baz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;dog&lt;/th&gt;
+      &lt;th&gt;bird&lt;/th&gt;
+      &lt;th&gt;cat&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;foo&lt;/td&gt;
+      &lt;td&gt;foo&lt;/td&gt;
+      &lt;td&gt;foo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;bar&lt;/td&gt;
+      &lt;td&gt;bar&lt;/td&gt;
+      &lt;td&gt;bar&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;baz&lt;/td&gt;
+      &lt;td&gt;baz&lt;/td&gt;
+      &lt;td&gt;baz&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 </description>
                 <link>http://imagine243.github.io/2015/03/15/markdown</link>
                 <guid>http://imagine243.github.io/2015/03/15/markdown</guid>
