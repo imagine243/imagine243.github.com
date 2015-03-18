@@ -4,7 +4,7 @@
  <title>imagine243</title>
  <link href="http://imagine243.github.io/" rel="self"/>
  <link href="http://imagine243.github.io"/>
- <updated>2015-03-18T22:08:33+08:00</updated>
+ <updated>2015-03-18T22:10:17+08:00</updated>
  <id>http://imagine243.github.io</id>
  <author>
    <name>imagine243</name>
@@ -132,12 +132,6 @@ baz | baz  | baz
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;h3 id=&quot;section-7&quot;&gt;引用&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;
-这是引用
-&lt;/code&gt;&lt;/p&gt;
 
 </content>
  </entry>
