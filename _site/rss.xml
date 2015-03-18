@@ -5,8 +5,8 @@
         <description>imagine243 - imagine243</description>
         <link>http://imagine243.github.io</link>
         <link>http://imagine243.github.io</link>
-        <lastBuildDate>2015-03-18T22:02:36+08:00</lastBuildDate>
-        <pubDate>2015-03-18T22:02:36+08:00</pubDate>
+        <lastBuildDate>2015-03-18T22:08:33+08:00</lastBuildDate>
+        <pubDate>2015-03-18T22:08:33+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -127,6 +127,13 @@ baz | baz  | baz
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+
+&lt;h3 id=&quot;section-7&quot;&gt;引用&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;
+这是引用
+&lt;/code&gt;&lt;/p&gt;
+
 </description>
                 <link>http://imagine243.github.io/2015/03/15/markdown</link>
                 <guid>http://imagine243.github.io/2015/03/15/markdown</guid>
