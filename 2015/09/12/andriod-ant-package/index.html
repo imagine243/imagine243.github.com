@@ -30,7 +30,7 @@
 
 
 
-  <meta name="keywords" content="test," />
+  <meta name="keywords" content="android ant package," />
 
 
 
@@ -39,16 +39,19 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="test pagetesttest">
+<meta name="description" content="android使用ant打包android 现在全方面都使用AndroidStudio，脚本打包也全面转向了使用 gradle， 官方的文档也全部都是gradle的。而现在的android游戏项目还是在使用eclipse，各种渠道，插件同样是eclipse的插件。所以记录下ant来打包android工程的方式。
+android环境需要把 android命令，加入到环境变量中。运行下面命令，查看下现">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://yoursite.com/2015/09/10/test/index.html">
+<meta property="og:title" content="android使用ant打包">
+<meta property="og:url" content="http://yoursite.com/2015/09/12/andriod-ant-package/index.html">
 <meta property="og:site_name" content="imagine">
-<meta property="og:description" content="test pagetesttest">
-<meta property="og:updated_time" content="2015-09-12T14:05:16.000Z">
+<meta property="og:description" content="android使用ant打包android 现在全方面都使用AndroidStudio，脚本打包也全面转向了使用 gradle， 官方的文档也全部都是gradle的。而现在的android游戏项目还是在使用eclipse，各种渠道，插件同样是eclipse的插件。所以记录下ant来打包android工程的方式。
+android环境需要把 android命令，加入到环境变量中。运行下面命令，查看下现">
+<meta property="og:updated_time" content="2015-09-12T15:29:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-<meta name="twitter:description" content="test pagetesttest">
+<meta name="twitter:title" content="android使用ant打包">
+<meta name="twitter:description" content="android使用ant打包android 现在全方面都使用AndroidStudio，脚本打包也全面转向了使用 gradle， 官方的文档也全部都是gradle的。而现在的android游戏项目还是在使用eclipse，各种渠道，插件同样是eclipse的插件。所以记录下ant来打包android工程的方式。
+android环境需要把 android命令，加入到环境变量中。运行下面命令，查看下现">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -58,7 +61,7 @@
   };
 </script>
 
-  <title> test | imagine </title>
+  <title> android使用ant打包 | imagine </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -157,7 +160,7 @@
           
           
             
-              test
+              android使用ant打包
             
           
         </h1>
@@ -166,8 +169,8 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-09-10T23:24:35+08:00" content="2015-09-10">
-            2015-09-10
+          <time itemprop="dateCreated" datetime="2015-09-12T23:07:40+08:00" content="2015-09-12">
+            2015-09-12
           </time>
         </span>
 
@@ -185,7 +188,24 @@
       
 
       
-        <span itemprop="articleBody"><h1 id="test_page">test page</h1><h2 id="test">test</h2><h3 id="test-1">test</h3></span>
+        <span itemprop="articleBody"><h3 id="android使用ant打包">android使用ant打包</h3><p>android 现在全方面都使用AndroidStudio，脚本打包也全面转向了使用 gradle， 官方的文档也全部都是gradle的。而现在的android游戏项目还是在使用eclipse，各种渠道，插件同样是eclipse的插件。所以记录下ant来打包android工程的方式。</p>
+<h3 id="android环境">android环境</h3><p>需要把 android命令，加入到环境变量中。<br>运行下面命令，查看下现在现在电脑上使用的androidsdk的版本。</p>
+<blockquote>
+<p>android list targets </p>
+</blockquote>
+<h3 id="生成ant打包脚本。">生成ant打包脚本。</h3><p>进入android的工程目录<br>运行下面命令，生成ant打包脚本build.xml, num是刚刚获得的androidsdk版本。</p>
+<blockquote>
+<p>android update project –path . –target num </p>
+</blockquote>
+<h3 id="ant_打包">ant 打包</h3><p>在android工程目录运行 ant，默认是help target<br>清理android工程</p>
+<blockquote>
+<p>ant clean</p>
+</blockquote>
+<p>打包android工程</p>
+<blockquote>
+<p>ant package </p>
+</blockquote>
+</span>
       
     </div>
 
@@ -193,7 +213,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/test/" rel="tag">#test</a>
+            <a href="/tags/android-ant-package/" rel="tag">#android ant package</a>
           
         </div>
       
@@ -202,11 +222,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/09/12/andriod-ant-package/" rel="prev">android使用ant打包</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/09/10/test/" rel="next">test</a>
             
           </div>
         </div>
@@ -310,7 +330,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#test_page"><span class="nav-number">1.</span> <span class="nav-text">test page</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#test"><span class="nav-number">1.1.</span> <span class="nav-text">test</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#test-1"><span class="nav-number">1.1.1.</span> <span class="nav-text">test</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#android使用ant打包"><span class="nav-number">1.</span> <span class="nav-text">android使用ant打包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#android环境"><span class="nav-number">2.</span> <span class="nav-text">android环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成ant打包脚本。"><span class="nav-number">3.</span> <span class="nav-text">生成ant打包脚本。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ant_打包"><span class="nav-number">4.</span> <span class="nav-text">ant 打包</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
