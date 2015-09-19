@@ -30,7 +30,7 @@
 
 
 
-  <meta name="keywords" content="Hexo,next" />
+  <meta name="keywords" content="mac at命令," />
 
 
 
@@ -39,15 +39,22 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="less is more">
-<meta property="og:type" content="website">
-<meta property="og:title" content="imagine">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="在mac终端中使用at命令今天发现在mac下没有办法使用at命令。提示到
+
+Note that at is implemented through the launchd(8) daemon periodically invoking atrun(8), which is disabled by default.  See atrun(8) for information about enabli">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在mac终端中使用at命令">
+<meta property="og:url" content="http://yoursite.com/2015/09/19/mac-at-commond/index.html">
 <meta property="og:site_name" content="imagine">
-<meta property="og:description" content="less is more">
+<meta property="og:description" content="在mac终端中使用at命令今天发现在mac下没有办法使用at命令。提示到
+
+Note that at is implemented through the launchd(8) daemon periodically invoking atrun(8), which is disabled by default.  See atrun(8) for information about enabli">
+<meta property="og:updated_time" content="2015-09-19T15:09:46.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="imagine">
-<meta name="twitter:description" content="less is more">
+<meta name="twitter:title" content="在mac终端中使用at命令">
+<meta name="twitter:description" content="在mac终端中使用at命令今天发现在mac下没有办法使用at命令。提示到
+
+Note that at is implemented through the launchd(8) daemon periodically invoking atrun(8), which is disabled by default.  See atrun(8) for information about enabli">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -57,7 +64,7 @@
   };
 </script>
 
-  <title> imagine </title>
+  <title> 在mac终端中使用at命令 | imagine </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -75,9 +82,7 @@
 
 
 
-  <div class="container one-column 
-   page-home 
-">
+  <div class="container one-column page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -145,9 +150,9 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div id="content" class="content"> 
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
@@ -158,9 +163,7 @@
           
           
             
-              <a class="post-title-link" href="/2015/09/19/mac-at-commond/" itemprop="url">
-                在mac终端中使用at命令
-              </a>
+              在mac终端中使用at命令
             
           
         </h1>
@@ -188,8 +191,7 @@
       
 
       
-        
-          <span itemprop="articleBody"><h3 id="在mac终端中使用at命令">在mac终端中使用at命令</h3><p>今天发现在mac下没有办法使用at命令。<br>提示到</p>
+        <span itemprop="articleBody"><h3 id="在mac终端中使用at命令">在mac终端中使用at命令</h3><p>今天发现在mac下没有办法使用at命令。<br>提示到</p>
 <blockquote>
 <p>Note that at is implemented through the launchd(8) daemon periodically invoking atrun(8), which is disabled by default.  See atrun(8) for information about enabling atrun.</p>
 </blockquote>
@@ -211,109 +213,52 @@
 <p><eod> 是ctrl ＋ D</eod></p>
 <p>然后就可以看到新建了一个test.txt文件， 内容是’test at commond’。</p>
 </span>
-        
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/mac-at命令/" rel="tag">#mac at命令</a>
+          
+        </div>
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/09/12/andriod-ant-package/" rel="next">android使用ant打包</a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
-      
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/09/12/andriod-ant-package/" itemprop="url">
-                android使用ant打包
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-09-12T23:07:40+08:00" content="2015-09-12">
-            2015-09-12
-          </time>
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><h3 id="android使用ant打包">android使用ant打包</h3><p>android 现在全方面都使用AndroidStudio，脚本打包也全面转向了使用 gradle， 官方的文档也全部都是gradle的。而现在的android游戏项目还是在使用eclipse，各种渠道，插件同样是eclipse的插件。所以记录下ant来打包android工程的方式。</p>
-<h3 id="android环境">android环境</h3><p>需要把 android命令，加入到环境变量中。<br>运行下面命令，查看下现在现在电脑上使用的androidsdk的版本。</p>
-<blockquote>
-<p>android list targets </p>
-</blockquote>
-<h3 id="生成ant打包脚本。">生成ant打包脚本。</h3><p>进入android的工程目录<br>运行下面命令，生成ant打包脚本build.xml, num是刚刚获得的androidsdk版本。</p>
-<blockquote>
-<p>android update project –path . –target num </p>
-</blockquote>
-<h3 id="ant_打包">ant 打包</h3><p>在android工程目录运行 ant，默认是help target<br>清理android工程</p>
-<blockquote>
-<p>ant clean</p>
-</blockquote>
-<p>打包android工程</p>
-<blockquote>
-<p>ant package </p>
-</blockquote>
-</span>
-        
+    <div class="post-spread">
       
     </div>
+  </div>
 
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
  </div>
 
         
 
+        
+          <div class="comments" id="comments">
+            
+          </div>
         
       </div>
 
@@ -330,6 +275,15 @@
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
 
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
       
 
       <section class="site-overview">
@@ -377,6 +331,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#在mac终端中使用at命令"><span class="nav-number">1.</span> <span class="nav-text">在mac终端中使用at命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开启atrun配置"><span class="nav-number">2.</span> <span class="nav-text">开启atrun配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#at_命令"><span class="nav-number">3.</span> <span class="nav-text">at 命令</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </section>
       
 
     </div>
@@ -446,6 +411,165 @@
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.1" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 0.4 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    var $tocContent = $('.post-toc-content');
+    if (isDesktop() && CONFIG.sidebar === 'post') {
+      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+        displaySidebar();
+      }
+    }
+  });
+</script>
+
+
 
   <script type="text/javascript">
     $(document).ready(function () {
