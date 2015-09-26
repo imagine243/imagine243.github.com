@@ -42,7 +42,7 @@
 <meta name="description" content="less is more">
 <meta property="og:type" content="website">
 <meta property="og:title" content="imagine">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/UrlEncode/index.html">
 <meta property="og:site_name" content="imagine">
 <meta property="og:description" content="less is more">
 <meta name="twitter:card" content="summary">
@@ -57,7 +57,7 @@
   };
 </script>
 
-  <title> imagine </title>
+  <title> 标签: UrlEncode | imagine </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -75,9 +75,7 @@
 
 
 
-  <div class="container one-column 
-   page-home 
-">
+  <div class="container one-column ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -145,239 +143,39 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div id="content" class="content"> 
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-collapse">
+    <div class="collection-title">
+      <h2 >
+        UrlEncode
+        <small>标签</small>
+      </h2>
+    </div>
+
     
       
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal"itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/09/26/url-encode/" itemprop="url">
-                Url编码 UrlEncode
-              </a>
-            
-          
-        </h1>
-      
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/2015/09/26/url-encode/" itemprop="url">
+              <span itemprop="name">Url编码 UrlEncode</span>
+            </a>
+        
+      </h1>
 
       <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-09-26T11:36:17+08:00" content="2015-09-26">
-            2015-09-26
-          </time>
-        </span>
-
-        
-
-        
-          
-        
+        <time class="post-time" datetime="2015-09-26T03:36:17.000Z" itemprop="dateCreated" content="2015-09-26"> 09-26 </time>
       </div>
+
     </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><h3 id="Url编码">Url编码</h3><p>昨天在接华为的渠道sdk，通过把华为返回的accesstoken拼接到url中访问服务器登陆接口。<br>上午还是很正常的访问，下午就突然不能访问，服务器端查了下，原因是accesstoken中有一个”+”号.</p>
-<p>“+”是url中的保留字，不能在url的内容中出现，所以需要把accesstoken UrlEncode后再拼接到url中去访问服务器。</p>
-<p>这个问题在四年前就遇到过，这次还掉坑里，在这纪录一下。</p>
-<h3 id="URI的百分号编码">URI的百分号编码</h3><p>URI中分为保留字和非保留字，保留字是有特殊含义的字段.<br><img src="uploads/url_encode_keyword.png" alt="image"></p>
-<p>对于保留字可以采用百分号编码，首先需要把该字符的ASCII的值表示为两个16进制的数字，然后在其前面放置转义字符“％”。<br>未保留字也可以采用相同的方式来编码，字符当前的标准是把字符专为UTF－8字序，然后对每个字节百分号编码，下面参考文档的链接就是这样。</p>
-<h5 id="参考文档">参考文档</h5><p><a href="https://zh.wikipedia.org/wiki/%E7%99%BE%E5%88%86%E5%8F%B7%E7%BC%96%E7%A0%81" target="_blank" rel="external">百分号编码</a></p>
-<blockquote>
-<p><a href="https://zh.wikipedia.org/wiki/%E7%99%BE%E5%88%86%E5%8F%B7%E7%BC%96%E7%A0%81" target="_blank" rel="external">https://zh.wikipedia.org/wiki/%E7%99%BE%E5%88%86%E5%8F%B7%E7%BC%96%E7%A0%81</a></p>
-</blockquote>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </article>
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/09/19/mac-at-commond/" itemprop="url">
-                在mac终端中使用at命令
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-09-19T22:02:43+08:00" content="2015-09-19">
-            2015-09-19
-          </time>
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><h3 id="在mac终端中使用at命令">在mac终端中使用at命令</h3><p>今天发现在mac下没有办法使用at命令。<br>提示到</p>
-<blockquote>
-<p>Note that at is implemented through the launchd(8) daemon periodically invoking atrun(8), which is disabled by default.  See atrun(8) for information about enabling atrun.</p>
-</blockquote>
-<p>接着man atrun</p>
-<blockquote>
-<p>The atrun utility runs commands queued by at(1).  It is invoked periodi-cally by launchd(8) as specified in the com.apple.atrun.plist propertylist.  By default the property list contains the Disabled key set to true, so atrun is never invoked.</p>
-<p>Execute the following command as root to enable atrun:<br>launchctl load -w /System/Library/LaunchDaemons/com.apple.atrun.plist</p>
-</blockquote>
-<p>看来只需要在mac中开启atrun的配置。</p>
-<h3 id="开启atrun配置">开启atrun配置</h3><p>修改 /System/Library/LaunchDaemons/com.apple.atrun.plist 文件，把其中true改为false<br>先调用 </p>
-<blockquote>
-<p>sudo launchctl unload -F /System/Library/LaunchDaemons/com.apple.atrun.plist<br>然后调用<br>sudo launchctl load -F /System/Library/LaunchDaemons/com.apple.atrun.plist</p>
-</blockquote>
-<h3 id="at_命令">at 命令</h3><blockquote>
-<p>$ at now + 1 minute<br>echo ‘test at commond ‘ &gt; test.txt</p>
-<eod>
-
-</eod></blockquote>
-<p><eod> 是ctrl ＋ D</eod></p>
-<p>然后就可以看到新建了一个test.txt文件， 内容是’test at commond’。</p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2015/09/12/andriod-ant-package/" itemprop="url">
-                android使用ant打包
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2015-09-12T23:07:40+08:00" content="2015-09-12">
-            2015-09-12
-          </time>
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><h3 id="android使用ant打包">android使用ant打包</h3><p>android 现在全方面都使用AndroidStudio，脚本打包也全面转向了使用 gradle， 官方的文档也全部都是gradle的。而现在的android游戏项目还是在使用eclipse，各种渠道，插件同样是eclipse的插件。所以记录下ant来打包android工程的方式。</p>
-<h3 id="android环境">android环境</h3><p>需要把 android命令，加入到环境变量中。<br>运行下面命令，查看下现在现在电脑上使用的androidsdk的版本。</p>
-<blockquote>
-<p>android list targets </p>
-</blockquote>
-<h3 id="生成ant打包脚本。">生成ant打包脚本。</h3><p>进入android的工程目录<br>运行下面命令，生成ant打包脚本build.xml, num是刚刚获得的androidsdk版本。</p>
-<blockquote>
-<p>android update project –path . –target num </p>
-</blockquote>
-<h3 id="ant_打包">ant 打包</h3><p>在android工程目录运行 ant，默认是help target<br>清理android工程</p>
-<blockquote>
-<p>ant clean</p>
-</blockquote>
-<p>打包android工程</p>
-<blockquote>
-<p>ant package </p>
-</blockquote>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
+  </div>
 
   
  </div>
@@ -488,6 +286,12 @@
 
   
   
+  
+    <script type="text/javascript">
+      postMotionOptions = {stagger: 100, drag: true};
+    </script>
+  
+
   
     
     

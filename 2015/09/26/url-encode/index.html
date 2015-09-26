@@ -30,7 +30,7 @@
 
 
 
-  <meta name="keywords" content="mac at命令," />
+  <meta name="keywords" content="UrlEncode," />
 
 
 
@@ -39,22 +39,23 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="在mac终端中使用at命令今天发现在mac下没有办法使用at命令。提示到
-
-Note that at is implemented through the launchd(8) daemon periodically invoking atrun(8), which is disabled by default.  See atrun(8) for information about enabli">
+<meta name="description" content="Url编码昨天在接华为的渠道sdk，通过把华为返回的accesstoken拼接到url中访问服务器登陆接口。上午还是很正常的访问，下午就突然不能访问，服务器端查了下，原因是accesstoken中有一个”+”号.
+“+”是url中的保留字，不能在url的内容中出现，所以需要把accesstoken UrlEncode后再拼接到url中去访问服务器。
+这个问题在四年前就遇到过，这次还掉坑里，在这纪录">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在mac终端中使用at命令">
-<meta property="og:url" content="http://yoursite.com/2015/09/19/mac-at-commond/index.html">
+<meta property="og:title" content="Url编码 UrlEncode">
+<meta property="og:url" content="http://yoursite.com/2015/09/26/url-encode/index.html">
 <meta property="og:site_name" content="imagine">
-<meta property="og:description" content="在mac终端中使用at命令今天发现在mac下没有办法使用at命令。提示到
-
-Note that at is implemented through the launchd(8) daemon periodically invoking atrun(8), which is disabled by default.  See atrun(8) for information about enabli">
-<meta property="og:updated_time" content="2015-09-19T15:09:46.000Z">
+<meta property="og:description" content="Url编码昨天在接华为的渠道sdk，通过把华为返回的accesstoken拼接到url中访问服务器登陆接口。上午还是很正常的访问，下午就突然不能访问，服务器端查了下，原因是accesstoken中有一个”+”号.
+“+”是url中的保留字，不能在url的内容中出现，所以需要把accesstoken UrlEncode后再拼接到url中去访问服务器。
+这个问题在四年前就遇到过，这次还掉坑里，在这纪录">
+<meta property="og:image" content="http://yoursite.com/uploads/url_encode_keyword.png">
+<meta property="og:updated_time" content="2015-09-26T04:01:33.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在mac终端中使用at命令">
-<meta name="twitter:description" content="在mac终端中使用at命令今天发现在mac下没有办法使用at命令。提示到
-
-Note that at is implemented through the launchd(8) daemon periodically invoking atrun(8), which is disabled by default.  See atrun(8) for information about enabli">
+<meta name="twitter:title" content="Url编码 UrlEncode">
+<meta name="twitter:description" content="Url编码昨天在接华为的渠道sdk，通过把华为返回的accesstoken拼接到url中访问服务器登陆接口。上午还是很正常的访问，下午就突然不能访问，服务器端查了下，原因是accesstoken中有一个”+”号.
+“+”是url中的保留字，不能在url的内容中出现，所以需要把accesstoken UrlEncode后再拼接到url中去访问服务器。
+这个问题在四年前就遇到过，这次还掉坑里，在这纪录">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -64,7 +65,7 @@ Note that at is implemented through the launchd(8) daemon periodically invoking 
   };
 </script>
 
-  <title> 在mac终端中使用at命令 | imagine </title>
+  <title> Url编码 UrlEncode | imagine </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -163,7 +164,7 @@ Note that at is implemented through the launchd(8) daemon periodically invoking 
           
           
             
-              在mac终端中使用at命令
+              Url编码 UrlEncode
             
           
         </h1>
@@ -172,8 +173,8 @@ Note that at is implemented through the launchd(8) daemon periodically invoking 
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-09-19T22:02:43+08:00" content="2015-09-19">
-            2015-09-19
+          <time itemprop="dateCreated" datetime="2015-09-26T11:36:17+08:00" content="2015-09-26">
+            2015-09-26
           </time>
         </span>
 
@@ -191,27 +192,15 @@ Note that at is implemented through the launchd(8) daemon periodically invoking 
       
 
       
-        <span itemprop="articleBody"><h3 id="在mac终端中使用at命令">在mac终端中使用at命令</h3><p>今天发现在mac下没有办法使用at命令。<br>提示到</p>
+        <span itemprop="articleBody"><h3 id="Url编码">Url编码</h3><p>昨天在接华为的渠道sdk，通过把华为返回的accesstoken拼接到url中访问服务器登陆接口。<br>上午还是很正常的访问，下午就突然不能访问，服务器端查了下，原因是accesstoken中有一个”+”号.</p>
+<p>“+”是url中的保留字，不能在url的内容中出现，所以需要把accesstoken UrlEncode后再拼接到url中去访问服务器。</p>
+<p>这个问题在四年前就遇到过，这次还掉坑里，在这纪录一下。</p>
+<h3 id="URI的百分号编码">URI的百分号编码</h3><p>URI中分为保留字和非保留字，保留字是有特殊含义的字段.<br><img src="uploads/url_encode_keyword.png" alt="image"></p>
+<p>对于保留字可以采用百分号编码，首先需要把该字符的ASCII的值表示为两个16进制的数字，然后在其前面放置转义字符“％”。<br>未保留字也可以采用相同的方式来编码，字符当前的标准是把字符专为UTF－8字序，然后对每个字节百分号编码，下面参考文档的链接就是这样。</p>
+<h5 id="参考文档">参考文档</h5><p><a href="https://zh.wikipedia.org/wiki/%E7%99%BE%E5%88%86%E5%8F%B7%E7%BC%96%E7%A0%81" target="_blank" rel="external">百分号编码</a></p>
 <blockquote>
-<p>Note that at is implemented through the launchd(8) daemon periodically invoking atrun(8), which is disabled by default.  See atrun(8) for information about enabling atrun.</p>
+<p><a href="https://zh.wikipedia.org/wiki/%E7%99%BE%E5%88%86%E5%8F%B7%E7%BC%96%E7%A0%81" target="_blank" rel="external">https://zh.wikipedia.org/wiki/%E7%99%BE%E5%88%86%E5%8F%B7%E7%BC%96%E7%A0%81</a></p>
 </blockquote>
-<p>接着man atrun</p>
-<blockquote>
-<p>The atrun utility runs commands queued by at(1).  It is invoked periodi-cally by launchd(8) as specified in the com.apple.atrun.plist propertylist.  By default the property list contains the Disabled key set to true, so atrun is never invoked.</p>
-<p>Execute the following command as root to enable atrun:<br>launchctl load -w /System/Library/LaunchDaemons/com.apple.atrun.plist</p>
-</blockquote>
-<p>看来只需要在mac中开启atrun的配置。</p>
-<h3 id="开启atrun配置">开启atrun配置</h3><p>修改 /System/Library/LaunchDaemons/com.apple.atrun.plist 文件，把其中true改为false<br>先调用 </p>
-<blockquote>
-<p>sudo launchctl unload -F /System/Library/LaunchDaemons/com.apple.atrun.plist<br>然后调用<br>sudo launchctl load -F /System/Library/LaunchDaemons/com.apple.atrun.plist</p>
-</blockquote>
-<h3 id="at_命令">at 命令</h3><blockquote>
-<p>$ at now + 1 minute<br>echo ‘test at commond ‘ &gt; test.txt</p>
-<eod>
-
-</eod></blockquote>
-<p><eod> 是ctrl ＋ D</eod></p>
-<p>然后就可以看到新建了一个test.txt文件， 内容是’test at commond’。</p>
 </span>
       
     </div>
@@ -220,7 +209,7 @@ Note that at is implemented through the launchd(8) daemon periodically invoking 
       
         <div class="post-tags">
           
-            <a href="/tags/mac-at命令/" rel="tag">#mac at命令</a>
+            <a href="/tags/UrlEncode/" rel="tag">#UrlEncode</a>
           
         </div>
       
@@ -229,13 +218,11 @@ Note that at is implemented through the launchd(8) daemon periodically invoking 
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/09/26/url-encode/" rel="prev">Url编码 UrlEncode</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/09/12/andriod-ant-package/" rel="next">android使用ant打包</a>
+              <a href="/2015/09/19/mac-at-commond/" rel="next">在mac终端中使用at命令</a>
             
           </div>
         </div>
@@ -339,7 +326,7 @@ Note that at is implemented through the launchd(8) daemon periodically invoking 
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#在mac终端中使用at命令"><span class="nav-number">1.</span> <span class="nav-text">在mac终端中使用at命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开启atrun配置"><span class="nav-number">2.</span> <span class="nav-text">开启atrun配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#at_命令"><span class="nav-number">3.</span> <span class="nav-text">at 命令</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Url编码"><span class="nav-number">1.</span> <span class="nav-text">Url编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#URI的百分号编码"><span class="nav-number">2.</span> <span class="nav-text">URI的百分号编码</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#参考文档"><span class="nav-number">2.0.1.</span> <span class="nav-text">参考文档</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
