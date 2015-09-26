@@ -50,7 +50,7 @@
 “+”是url中的保留字，不能在url的内容中出现，所以需要把accesstoken UrlEncode后再拼接到url中去访问服务器。
 这个问题在四年前就遇到过，这次还掉坑里，在这纪录">
 <meta property="og:image" content="http://yoursite.com/uploads/url_encode_keyword.png">
-<meta property="og:updated_time" content="2015-09-26T04:01:33.000Z">
+<meta property="og:updated_time" content="2015-09-26T04:17:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Url编码 UrlEncode">
 <meta name="twitter:description" content="Url编码昨天在接华为的渠道sdk，通过把华为返回的accesstoken拼接到url中访问服务器登陆接口。上午还是很正常的访问，下午就突然不能访问，服务器端查了下，原因是accesstoken中有一个”+”号.
@@ -121,6 +121,14 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            <i class="menu-item-icon icon-next-categories"></i> <br />
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             <i class="menu-item-icon icon-next-archives"></i> <br />
@@ -178,6 +186,21 @@
           </time>
         </span>
 
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/http/" itemprop="url" rel="index">
+                  <span itemprop="name">http</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
         
 
         
@@ -290,10 +313,10 @@
           </div>
 
           <div class="site-state-item site-state-categories">
-            
-              <span class="site-state-item-count">0</span>
+            <a href="/categories">
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">分类</span>
-              
+              </a>
           </div>
 
           <div class="site-state-item site-state-tags">
