@@ -30,7 +30,7 @@
 
 
 
-  <meta name="keywords" content="android ant package," />
+  <meta name="keywords" content="xcode," />
 
 
 
@@ -39,19 +39,20 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="android使用ant打包android 现在全方面都使用AndroidStudio，脚本打包也全面转向了使用 gradle， 官方的文档也全部都是gradle的。而现在的android游戏项目还是在使用eclipse，各种渠道，插件同样是eclipse的插件。所以记录下ant来打包android工程的方式。
-android环境需要把 android命令，加入到环境变量中。运行下面命令，查看下现">
+<meta name="description" content="Lua嵌入工程中之前在cocos2dx中使用lua语言，感觉非常好用，简单，速度快，跟c／c++结合很容易。在这里记录下lua接入工程中的方法。
+Lua接入mac工程新建xcode mac 命令行工程。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="android使用ant打包">
-<meta property="og:url" content="http://yoursite.com/2015/09/12/andriod-ant-package/index.html">
+<meta property="og:title" content="Lua嵌入工程中">
+<meta property="og:url" content="http://yoursite.com/2015/10/06/Lua-lib/index.html">
 <meta property="og:site_name" content="imagine">
-<meta property="og:description" content="android使用ant打包android 现在全方面都使用AndroidStudio，脚本打包也全面转向了使用 gradle， 官方的文档也全部都是gradle的。而现在的android游戏项目还是在使用eclipse，各种渠道，插件同样是eclipse的插件。所以记录下ant来打包android工程的方式。
-android环境需要把 android命令，加入到环境变量中。运行下面命令，查看下现">
-<meta property="og:updated_time" content="2015-09-26T04:13:51.000Z">
+<meta property="og:description" content="Lua嵌入工程中之前在cocos2dx中使用lua语言，感觉非常好用，简单，速度快，跟c／c++结合很容易。在这里记录下lua接入工程中的方法。
+Lua接入mac工程新建xcode mac 命令行工程。">
+<meta property="og:image" content="http://yoursite.com/uploads/lua_lib_1.png">
+<meta property="og:updated_time" content="2015-10-06T09:14:04.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="android使用ant打包">
-<meta name="twitter:description" content="android使用ant打包android 现在全方面都使用AndroidStudio，脚本打包也全面转向了使用 gradle， 官方的文档也全部都是gradle的。而现在的android游戏项目还是在使用eclipse，各种渠道，插件同样是eclipse的插件。所以记录下ant来打包android工程的方式。
-android环境需要把 android命令，加入到环境变量中。运行下面命令，查看下现">
+<meta name="twitter:title" content="Lua嵌入工程中">
+<meta name="twitter:description" content="Lua嵌入工程中之前在cocos2dx中使用lua语言，感觉非常好用，简单，速度快，跟c／c++结合很容易。在这里记录下lua接入工程中的方法。
+Lua接入mac工程新建xcode mac 命令行工程。">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -61,7 +62,7 @@ android环境需要把 android命令，加入到环境变量中。运行下面�
   };
 </script>
 
-  <title> android使用ant打包 | imagine </title>
+  <title> Lua嵌入工程中 | imagine </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -168,7 +169,7 @@ android环境需要把 android命令，加入到环境变量中。运行下面�
           
           
             
-              android使用ant打包
+              Lua嵌入工程中
             
           
         </h1>
@@ -177,26 +178,11 @@ android环境需要把 android命令，加入到环境变量中。运行下面�
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-09-12T23:07:40+08:00" content="2015-09-12">
-            2015-09-12
+          <time itemprop="dateCreated" datetime="2015-10-06T17:02:03+08:00" content="2015-10-06">
+            2015-10-06
           </time>
         </span>
 
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/android/" itemprop="url" rel="index">
-                  <span itemprop="name">android</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
         
 
         
@@ -211,23 +197,8 @@ android环境需要把 android命令，加入到环境变量中。运行下面�
       
 
       
-        <span itemprop="articleBody"><h3 id="android使用ant打包">android使用ant打包</h3><p>android 现在全方面都使用AndroidStudio，脚本打包也全面转向了使用 gradle， 官方的文档也全部都是gradle的。而现在的android游戏项目还是在使用eclipse，各种渠道，插件同样是eclipse的插件。所以记录下ant来打包android工程的方式。</p>
-<h3 id="android环境">android环境</h3><p>需要把 android命令，加入到环境变量中。<br>运行下面命令，查看下现在现在电脑上使用的androidsdk的版本。</p>
-<blockquote>
-<p>android list targets </p>
-</blockquote>
-<h3 id="生成ant打包脚本。">生成ant打包脚本。</h3><p>进入android的工程目录<br>运行下面命令，生成ant打包脚本build.xml, num是刚刚获得的androidsdk版本。</p>
-<blockquote>
-<p>android update project –path . –target num </p>
-</blockquote>
-<h3 id="ant_打包">ant 打包</h3><p>在android工程目录运行 ant，默认是help target<br>清理android工程</p>
-<blockquote>
-<p>ant clean</p>
-</blockquote>
-<p>打包android工程</p>
-<blockquote>
-<p>ant package </p>
-</blockquote>
+        <span itemprop="articleBody"><h3 id="Lua嵌入工程中">Lua嵌入工程中</h3><p>之前在cocos2dx中使用lua语言，感觉非常好用，简单，速度快，跟c／c++结合很容易。<br>在这里记录下lua接入工程中的方法。</p>
+<h3 id="Lua接入mac工程">Lua接入mac工程</h3><p>新建xcode mac 命令行工程。<br><img src="/uploads/lua_lib_1.png" alt="image"></p>
 </span>
       
     </div>
@@ -236,7 +207,7 @@ android环境需要把 android命令，加入到环境变量中。运行下面�
       
         <div class="post-tags">
           
-            <a href="/tags/android-ant-package/" rel="tag">#android ant package</a>
+            <a href="/tags/xcode/" rel="tag">#xcode</a>
           
         </div>
       
@@ -245,11 +216,11 @@ android环境需要把 android命令，加入到环境变量中。运行下面�
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/09/19/mac-at-commond/" rel="prev">在mac终端中使用at命令</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/09/26/url-encode/" rel="next">Url编码 UrlEncode</a>
             
           </div>
         </div>
@@ -353,7 +324,7 @@ android环境需要把 android命令，加入到环境变量中。运行下面�
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#android使用ant打包"><span class="nav-number">1.</span> <span class="nav-text">android使用ant打包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#android环境"><span class="nav-number">2.</span> <span class="nav-text">android环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成ant打包脚本。"><span class="nav-number">3.</span> <span class="nav-text">生成ant打包脚本。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ant_打包"><span class="nav-number">4.</span> <span class="nav-text">ant 打包</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Lua嵌入工程中"><span class="nav-number">1.</span> <span class="nav-text">Lua嵌入工程中</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Lua接入mac工程"><span class="nav-number">2.</span> <span class="nav-text">Lua接入mac工程</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
