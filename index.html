@@ -166,6 +166,251 @@
           
           
             
+              <a class="post-title-link" href="/2015/11/14/objective-c-learn/" itemprop="url">
+                学习objective-c
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-11-14T10:42:19+08:00" content="2015-11-14">
+            2015-11-14
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/objective-c/" itemprop="url" rel="index">
+                  <span itemprop="name">objective-c</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h2 id="学习objective-c">学习objective-c</h2><h4 id="#import">#import</h4><p>#import 可以保证头文件只被包含一次，而不论实际引用了几次。相当于c++的 #ifdef方案。</p>
+<h4 id="NSString_@">NSString @</h4><p>双引号的字符串前面家上@符号，表示这个字符串是应该作为NSString类型处理。</p>
+<h4 id="BOOL类型">BOOL类型</h4><p>BOOL的值分别是YES和NO， 分别是通过＃define定义的 signed char 类型的 1和0.</p>
+<h4 id="NSLog()">NSLog()</h4><p>NSLog()可以使用％@来格式化打印一个对象，内容是对象的 description函数提供。</p>
+<h4 id="定义类">定义类</h4><p>头文件中定义</p>
+<pre><code><span class="comment">// Point.h</span>
+<span class="annotation">@interface</span> <span class="string">Point :</span> NSObject  <span class="comment">//类的声明 继承自NSObject</span>
+<span class="comment">// 成员变量区域</span>
+{
+    <span class="typename">int</span> x ;
+    <span class="typename">int</span> y ;
+}
+<span class="comment">// 声明的方法， 外部可以看见</span>
+- (<span class="typename">void</span>) <span class="string">SetX:</span> (<span class="typename">int</span>) x;
+
+- (<span class="typename">void</span>) <span class="string">SetY:</span> (<span class="typename">int</span>) y;
+
+<span class="comment">// 类声明的结束 </span>
+<span class="annotation">@end</span> <span class="comment">//Point 类名的注释</span>
+</code></pre><p>m文件中的实现</p>
+<pre><code><span class="comment">// Point.m</span>
+
+<span class="annotation">@implementation</span> Point <span class="comment">//类的实现 实现头文件中的声明 和 一些内部需要功能</span>
+
+- (<span class="typename">void</span>) <span class="string">SetX:</span> (<span class="typename">int</span>) x  <span class="comment">//实现函数 </span>
+{
+    <span class="comment">//self 相当于 c＋＋ 中的 this</span>
+    self.x = x;
+}
+
+- (<span class="typename">void</span>) <span class="string">SetY:</span> (<span class="typename">int</span>) y
+{
+    self.y = y;
+}
+
+<span class="comment">// 内部实现函数， 没有在 @interface中声明， 外部看不到， 但是因为objective－c的动态性，实际上外部还是能够调用的。</span>
+- (<span class="typename">void</span>) <span class="string">ReSetX:</span> (<span class="typename">int</span>) x <span class="string">SetY:</span> (<span class="typename">int</span>) y
+{
+    self.x = x;
+    self.y = y;
+}
+<span class="comment">// 类实现的结束声明</span>
+<span class="annotation">@end</span> <span class="comment">//Point</span>
+</code></pre><p>以上代码只是说明作用，并没有检查并编译运行，可能存在bug。</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2015/10/13/Android-debugalbe/" itemprop="url">
+                Android中debug和release区分
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-10-13T17:46:23+08:00" content="2015-10-13">
+            2015-10-13
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/Android/" itemprop="url" rel="index">
+                  <span itemprop="name">Android</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h3 id="Android中debug和release区分">Android中debug和release区分</h3><p>在所有的软件项目中都有debug和release的区分<br>之前android都是通过自己手写一个boolean的变量分辨<br>现在发现android会在gen下自动生成BuildConfig,其中的DEBUG变量也是自动生成的。<br>DEBUG在平时调试是true，在签名打包后是false；</p>
+<p>根据这个DEBUG添加了Log类</p>
+<pre><code><span class="keyword">public</span> class TDLog {
+
+    <span class="keyword">private</span> static <span class="built_in">String</span> <span class="built_in">TAG</span> = <span class="string">"TDLog"</span>;
+
+    <span class="keyword">public</span> static <span class="literal">void</span> v(<span class="built_in">String</span> <span class="built_in">tag</span>, <span class="built_in">String</span> msg) {
+        <span class="keyword">if</span> (BuildConfig<span class="built_in">.</span>DEBUG) {
+            <span class="keyword">Log</span><span class="built_in">.</span>v(<span class="built_in">tag</span>, msg);
+        }
+    }
+
+    <span class="keyword">public</span> static <span class="literal">void</span> i(<span class="built_in">String</span> <span class="built_in">tag</span>, <span class="built_in">String</span> msg) {
+        <span class="keyword">if</span> (BuildConfig<span class="built_in">.</span>DEBUG) {
+            <span class="keyword">Log</span><span class="built_in">.</span>i(<span class="built_in">tag</span>, msg);
+        }
+    }
+
+    <span class="keyword">public</span> static <span class="literal">void</span> d(<span class="built_in">String</span> <span class="built_in">tag</span>, <span class="built_in">String</span> msg) {
+        <span class="keyword">if</span> (BuildConfig<span class="built_in">.</span>DEBUG) {
+            <span class="keyword">Log</span><span class="built_in">.</span>d(<span class="built_in">tag</span>, msg);
+        }
+    }
+
+    <span class="keyword">public</span> static <span class="literal">void</span> w(<span class="built_in">String</span> <span class="built_in">tag</span>, <span class="built_in">String</span> msg) {
+        <span class="keyword">if</span> (BuildConfig<span class="built_in">.</span>DEBUG) {
+            <span class="keyword">Log</span><span class="built_in">.</span>w(<span class="built_in">tag</span>, msg);
+        }
+    }
+
+    <span class="keyword">public</span> static <span class="literal">void</span> e(<span class="built_in">String</span> <span class="built_in">tag</span>, <span class="built_in">String</span> msg) {
+        <span class="keyword">if</span> (BuildConfig<span class="built_in">.</span>DEBUG) {
+            <span class="keyword">Log</span><span class="built_in">.</span>e(<span class="built_in">tag</span>, msg);
+        }
+    }
+
+    <span class="keyword">public</span> static <span class="literal">void</span> assertTrue(<span class="built_in">Boolean</span> isTrue, <span class="built_in">String</span> msg)
+    {
+        <span class="keyword">if</span> (BuildConfig<span class="built_in">.</span>DEBUG) {
+            <span class="keyword">if</span> (isTrue) {
+<span class="comment">//                Log.v(TAG, msg);</span>
+            }<span class="keyword">else</span> {
+                <span class="keyword">Log</span><span class="built_in">.</span>e(<span class="built_in">TAG</span>, msg);
+                throw <span class="literal">new</span> RuntimeException(msg);
+            }
+
+        }
+    }
+}
+</code></pre></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2015/10/06/Lua-lib/" itemprop="url">
                 Lua嵌入工程中
               </a>
@@ -432,8 +677,8 @@
             &nbsp; | &nbsp; 分类于
             
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/android/" itemprop="url" rel="index">
-                  <span itemprop="name">android</span>
+                <a href="/categories/Android/" itemprop="url" rel="index">
+                  <span itemprop="name">Android</span>
                 </a>
               </span>
 
@@ -527,21 +772,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

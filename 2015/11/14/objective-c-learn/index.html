@@ -30,7 +30,7 @@
 
 
 
-  <meta name="keywords" content="UrlEncode," />
+  <meta name="keywords" content="objective-c," />
 
 
 
@@ -39,23 +39,25 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="Url编码昨天在接华为的渠道sdk，通过把华为返回的accesstoken拼接到url中访问服务器登陆接口。上午还是很正常的访问，下午就突然不能访问，服务器端查了下，原因是accesstoken中有一个”+”号.
-“+”是url中的保留字，不能在url的内容中出现，所以需要把accesstoken UrlEncode后再拼接到url中去访问服务器。
-这个问题在四年前就遇到过，这次还掉坑里，在这纪录">
+<meta name="description" content="学习objective-c#import#import 可以保证头文件只被包含一次，而不论实际引用了几次。相当于c++的 #ifdef方案。
+NSString @双引号的字符串前面家上@符号，表示这个字符串是应该作为NSString类型处理。
+BOOL类型BOOL的值分别是YES和NO， 分别是通过＃define定义的 signed char 类型的 1和0.
+NSLog()NSLog()可以使用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Url编码 UrlEncode">
-<meta property="og:url" content="http://yoursite.com/2015/09/26/url-encode/index.html">
+<meta property="og:title" content="学习objective-c">
+<meta property="og:url" content="http://yoursite.com/2015/11/14/objective-c-learn/index.html">
 <meta property="og:site_name" content="imagine">
-<meta property="og:description" content="Url编码昨天在接华为的渠道sdk，通过把华为返回的accesstoken拼接到url中访问服务器登陆接口。上午还是很正常的访问，下午就突然不能访问，服务器端查了下，原因是accesstoken中有一个”+”号.
-“+”是url中的保留字，不能在url的内容中出现，所以需要把accesstoken UrlEncode后再拼接到url中去访问服务器。
-这个问题在四年前就遇到过，这次还掉坑里，在这纪录">
-<meta property="og:image" content="http://yoursite.com/uploads/url_encode_keyword.png">
-<meta property="og:updated_time" content="2015-09-26T07:06:43.000Z">
+<meta property="og:description" content="学习objective-c#import#import 可以保证头文件只被包含一次，而不论实际引用了几次。相当于c++的 #ifdef方案。
+NSString @双引号的字符串前面家上@符号，表示这个字符串是应该作为NSString类型处理。
+BOOL类型BOOL的值分别是YES和NO， 分别是通过＃define定义的 signed char 类型的 1和0.
+NSLog()NSLog()可以使用">
+<meta property="og:updated_time" content="2015-11-14T03:43:50.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Url编码 UrlEncode">
-<meta name="twitter:description" content="Url编码昨天在接华为的渠道sdk，通过把华为返回的accesstoken拼接到url中访问服务器登陆接口。上午还是很正常的访问，下午就突然不能访问，服务器端查了下，原因是accesstoken中有一个”+”号.
-“+”是url中的保留字，不能在url的内容中出现，所以需要把accesstoken UrlEncode后再拼接到url中去访问服务器。
-这个问题在四年前就遇到过，这次还掉坑里，在这纪录">
+<meta name="twitter:title" content="学习objective-c">
+<meta name="twitter:description" content="学习objective-c#import#import 可以保证头文件只被包含一次，而不论实际引用了几次。相当于c++的 #ifdef方案。
+NSString @双引号的字符串前面家上@符号，表示这个字符串是应该作为NSString类型处理。
+BOOL类型BOOL的值分别是YES和NO， 分别是通过＃define定义的 signed char 类型的 1和0.
+NSLog()NSLog()可以使用">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -65,7 +67,7 @@
   };
 </script>
 
-  <title> Url编码 UrlEncode | imagine </title>
+  <title> 学习objective-c | imagine </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -172,7 +174,7 @@
           
           
             
-              Url编码 UrlEncode
+              学习objective-c
             
           
         </h1>
@@ -181,8 +183,8 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-09-26T11:36:17+08:00" content="2015-09-26">
-            2015-09-26
+          <time itemprop="dateCreated" datetime="2015-11-14T10:42:19+08:00" content="2015-11-14">
+            2015-11-14
           </time>
         </span>
 
@@ -191,8 +193,8 @@
             &nbsp; | &nbsp; 分类于
             
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/http/" itemprop="url" rel="index">
-                  <span itemprop="name">http</span>
+                <a href="/categories/objective-c/" itemprop="url" rel="index">
+                  <span itemprop="name">objective-c</span>
                 </a>
               </span>
 
@@ -215,15 +217,50 @@
       
 
       
-        <span itemprop="articleBody"><h3 id="Url编码">Url编码</h3><p>昨天在接华为的渠道sdk，通过把华为返回的accesstoken拼接到url中访问服务器登陆接口。<br>上午还是很正常的访问，下午就突然不能访问，服务器端查了下，原因是accesstoken中有一个”+”号.</p>
-<p>“+”是url中的保留字，不能在url的内容中出现，所以需要把accesstoken UrlEncode后再拼接到url中去访问服务器。</p>
-<p>这个问题在四年前就遇到过，这次还掉坑里，在这纪录一下。</p>
-<h3 id="URI的百分号编码">URI的百分号编码</h3><p>URI中分为保留字和非保留字，保留字是有特殊含义的字段.<br><img src="/uploads/url_encode_keyword.png" alt="image"></p>
-<p>对于保留字可以采用百分号编码，首先需要把该字符的ASCII的值表示为两个16进制的数字，然后在其前面放置转义字符“％”。<br>未保留字也可以采用相同的方式来编码，字符当前的标准是把字符专为UTF－8字序，然后对每个字节百分号编码，下面参考文档的链接就是这样。</p>
-<h5 id="参考文档">参考文档</h5><p><a href="https://zh.wikipedia.org/wiki/%E7%99%BE%E5%88%86%E5%8F%B7%E7%BC%96%E7%A0%81" target="_blank" rel="external">百分号编码</a></p>
-<blockquote>
-<p><a href="https://zh.wikipedia.org/wiki/%E7%99%BE%E5%88%86%E5%8F%B7%E7%BC%96%E7%A0%81" target="_blank" rel="external">https://zh.wikipedia.org/wiki/%E7%99%BE%E5%88%86%E5%8F%B7%E7%BC%96%E7%A0%81</a></p>
-</blockquote>
+        <span itemprop="articleBody"><h2 id="学习objective-c">学习objective-c</h2><h4 id="#import">#import</h4><p>#import 可以保证头文件只被包含一次，而不论实际引用了几次。相当于c++的 #ifdef方案。</p>
+<h4 id="NSString_@">NSString @</h4><p>双引号的字符串前面家上@符号，表示这个字符串是应该作为NSString类型处理。</p>
+<h4 id="BOOL类型">BOOL类型</h4><p>BOOL的值分别是YES和NO， 分别是通过＃define定义的 signed char 类型的 1和0.</p>
+<h4 id="NSLog()">NSLog()</h4><p>NSLog()可以使用％@来格式化打印一个对象，内容是对象的 description函数提供。</p>
+<h4 id="定义类">定义类</h4><p>头文件中定义</p>
+<pre><code><span class="comment">// Point.h</span>
+<span class="annotation">@interface</span> <span class="string">Point :</span> NSObject  <span class="comment">//类的声明 继承自NSObject</span>
+<span class="comment">// 成员变量区域</span>
+{
+    <span class="typename">int</span> x ;
+    <span class="typename">int</span> y ;
+}
+<span class="comment">// 声明的方法， 外部可以看见</span>
+- (<span class="typename">void</span>) <span class="string">SetX:</span> (<span class="typename">int</span>) x;
+
+- (<span class="typename">void</span>) <span class="string">SetY:</span> (<span class="typename">int</span>) y;
+
+<span class="comment">// 类声明的结束 </span>
+<span class="annotation">@end</span> <span class="comment">//Point 类名的注释</span>
+</code></pre><p>m文件中的实现</p>
+<pre><code><span class="comment">// Point.m</span>
+
+<span class="annotation">@implementation</span> Point <span class="comment">//类的实现 实现头文件中的声明 和 一些内部需要功能</span>
+
+- (<span class="typename">void</span>) <span class="string">SetX:</span> (<span class="typename">int</span>) x  <span class="comment">//实现函数 </span>
+{
+    <span class="comment">//self 相当于 c＋＋ 中的 this</span>
+    self.x = x;
+}
+
+- (<span class="typename">void</span>) <span class="string">SetY:</span> (<span class="typename">int</span>) y
+{
+    self.y = y;
+}
+
+<span class="comment">// 内部实现函数， 没有在 @interface中声明， 外部看不到， 但是因为objective－c的动态性，实际上外部还是能够调用的。</span>
+- (<span class="typename">void</span>) <span class="string">ReSetX:</span> (<span class="typename">int</span>) x <span class="string">SetY:</span> (<span class="typename">int</span>) y
+{
+    self.x = x;
+    self.y = y;
+}
+<span class="comment">// 类实现的结束声明</span>
+<span class="annotation">@end</span> <span class="comment">//Point</span>
+</code></pre><p>以上代码只是说明作用，并没有检查并编译运行，可能存在bug。</p>
 </span>
       
     </div>
@@ -232,7 +269,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/UrlEncode/" rel="tag">#UrlEncode</a>
+            <a href="/tags/objective-c/" rel="tag">#objective-c</a>
           
         </div>
       
@@ -241,13 +278,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/10/06/Lua-lib/" rel="prev">Lua嵌入工程中</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/09/19/mac-at-commond/" rel="next">在mac终端中使用at命令</a>
+              <a href="/2015/10/13/Android-debugalbe/" rel="next">Android中debug和release区分</a>
             
           </div>
         </div>
@@ -351,7 +386,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Url编码"><span class="nav-number">1.</span> <span class="nav-text">Url编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#URI的百分号编码"><span class="nav-number">2.</span> <span class="nav-text">URI的百分号编码</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#参考文档"><span class="nav-number">2.0.1.</span> <span class="nav-text">参考文档</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#学习objective-c"><span class="nav-number">1.</span> <span class="nav-text">学习objective-c</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="##import"><span class="nav-number">1.0.1.</span> <span class="nav-text">#import</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NSString_@"><span class="nav-number">1.0.2.</span> <span class="nav-text">NSString @</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#BOOL类型"><span class="nav-number">1.0.3.</span> <span class="nav-text">BOOL类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NSLog()"><span class="nav-number">1.0.4.</span> <span class="nav-text">NSLog()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#定义类"><span class="nav-number">1.0.5.</span> <span class="nav-text">定义类</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
