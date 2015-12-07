@@ -257,6 +257,11 @@
 <span class="annotation">@end</span> <span class="comment">//Point</span>
 </code></pre><p>以上代码只是说明作用，并没有检查并编译运行，可能存在bug。</p>
 <h4 id="@class">@class</h4><p>@class 只是引入class ，与#import 不同 。</p>
+<h4 id="Foundation_Kit">Foundation Kit</h4><p>NSString 和 NSMutableString 就像 java中的String 和 StringBuffer ， NSString一旦创建就不可变，NSMutableString是可变的。</p>
+<p>NSArray数量不可变的，可以存储Objective－C的对象，不能存储c的数据类型。<br>NSMutableArray 是数量可变，可以增加和删除对象的数组。</p>
+<h4 id="特性">特性</h4><p>.h 文件中使用 @property 定义变量 .m 文件中使用 @synthesize 编译器自动生成实现<br>@property (copy) NSString <em> name  // 在set函数中拷贝传入的参数<br>@property (retain) NSString </em> name // 在set函数中持有传入的参数，对参数retain 引用计数＋1</p>
+<p>@property (readwrite, copy) NSString * name //可以读可以写<br>@property (readonly) float size //只能读</p>
+<p>@synthesize name ＝ realName  // 真正操作的变量是realName ， name只是生成的函数是 setName和 name。</p>
 </span>
         
       
