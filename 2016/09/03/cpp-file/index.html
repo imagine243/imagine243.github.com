@@ -30,7 +30,7 @@
 
 
 
-  <meta name="keywords" content="svn," />
+  <meta name="keywords" content="c++," />
 
 
 
@@ -39,25 +39,16 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="从svn转向git缘由公司的unity项目使用的svn做项目的版本管理和协作，在实际使用中遇到几个问题。
-
-后端程序使用git作为代码版本管理，开发中经常出现客户端和后端提交代码不同步的问题， 客户端的代码每次提交不会是完整的功能，而后段是分支开发，每次都是完整功能完成后合并到master分支
-跟上面的问题有些相似，客户端因为不是分支开发的模式，在游戏的复杂的功能需求下，应对乏力，经常出现本地代码">
+<meta name="description" content="c++ 的文件操作资料 http://www.cplusplus.com/doc/tutorial/files/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="svn2git">
-<meta property="og:url" content="http://yoursite.com/2016/08/01/svn2git/index.html">
+<meta property="og:title" content="cpp_file">
+<meta property="og:url" content="http://yoursite.com/2016/09/03/cpp-file/index.html">
 <meta property="og:site_name" content="imagine">
-<meta property="og:description" content="从svn转向git缘由公司的unity项目使用的svn做项目的版本管理和协作，在实际使用中遇到几个问题。
-
-后端程序使用git作为代码版本管理，开发中经常出现客户端和后端提交代码不同步的问题， 客户端的代码每次提交不会是完整的功能，而后段是分支开发，每次都是完整功能完成后合并到master分支
-跟上面的问题有些相似，客户端因为不是分支开发的模式，在游戏的复杂的功能需求下，应对乏力，经常出现本地代码">
-<meta property="og:updated_time" content="2016-08-01T13:52:51.000Z">
+<meta property="og:description" content="c++ 的文件操作资料 http://www.cplusplus.com/doc/tutorial/files/">
+<meta property="og:updated_time" content="2016-09-03T15:17:54.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="svn2git">
-<meta name="twitter:description" content="从svn转向git缘由公司的unity项目使用的svn做项目的版本管理和协作，在实际使用中遇到几个问题。
-
-后端程序使用git作为代码版本管理，开发中经常出现客户端和后端提交代码不同步的问题， 客户端的代码每次提交不会是完整的功能，而后段是分支开发，每次都是完整功能完成后合并到master分支
-跟上面的问题有些相似，客户端因为不是分支开发的模式，在游戏的复杂的功能需求下，应对乏力，经常出现本地代码">
+<meta name="twitter:title" content="cpp_file">
+<meta name="twitter:description" content="c++ 的文件操作资料 http://www.cplusplus.com/doc/tutorial/files/">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -67,7 +58,7 @@
   };
 </script>
 
-  <title> svn2git | imagine </title>
+  <title> cpp_file | imagine </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -174,7 +165,7 @@
           
           
             
-              svn2git
+              cpp_file
             
           
         </h1>
@@ -183,26 +174,11 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2016-08-01T21:21:57+08:00" content="2016-08-01">
-            2016-08-01
+          <time itemprop="dateCreated" datetime="2016-09-03T23:16:02+08:00" content="2016-09-03">
+            2016-09-03
           </time>
         </span>
 
-        
-          <span class="post-category" >
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/git/" itemprop="url" rel="index">
-                  <span itemprop="name">git</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
         
 
         
@@ -217,23 +193,8 @@
       
 
       
-        <span itemprop="articleBody"><h2 id="从svn转向git">从svn转向git</h2><h3 id="缘由">缘由</h3><p>公司的unity项目使用的svn做项目的版本管理和协作，在实际使用中遇到几个问题。</p>
-<ol>
-<li>后端程序使用git作为代码版本管理，开发中经常出现客户端和后端提交代码不同步的问题， 客户端的代码每次提交不会是完整的功能，而后段是分支开发，每次都是完整功能完成后合并到master分支</li>
-<li>跟上面的问题有些相似，客户端因为不是分支开发的模式，在游戏的复杂的功能需求下，应对乏力，经常出现本地代码不能提交，手动合并代码的情况。</li>
-<li>现在游戏主要以海外版本为主，每个国家都对应的不同的分支，而且还有大版本的更新，svn在分支使用上非常的笨重，非常影响工作的效率，比如每个分支都要重新牵出，重新unity转平台，再比如修改bug需要合并到多个分支。svn缓慢的速度严重影响工作。</li>
-<li>打包机使用的是ssd，空间有限，svn的每一个分支都需要重新checkout项目，使用git后，在同一个项目切换分支，可以节省大量空间。</li>
-</ol>
-<p>但是使用git也有一定的弊端，我们unity项目在两个分支中如果有大量的图片不同，那么切换分支就需要大量的时间来转换图片。</p>
-<h4 id="综合考虑">综合考虑</h4><p>项目进入后期，主要以海外平台为主，特征是分支多，每个版本之间的资源改变小，是用git后可以解决原来的问题，上面所说的弊端只有很少情况下出现，如果真的有分支之间图片资源差异比较大，可以重新clone一份项目，使用svn的方式。</p>
-<h3 id="服务器端部署git">服务器端部署git</h3><h4 id="解决方案">解决方案</h4><ul>
-<li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000" target="_blank" rel="external">服务器只使用git</a></li>
-<li><a href="https://about.gitlab.com/" target="_blank" rel="external">gitlab</a></li>
-<li><a href="https://gogs.io/" target="_blank" rel="external">gogs</a></li>
-</ul>
-<p>最终选用gogs，功能相对齐全，已经满足我们的使用，安装十分简便， gitlab安装太复杂，珍惜时间。</p>
-<h4 id="安装gogs">安装gogs</h4><p>TODO</p>
-<h3 id="迁移svn内容到git">迁移svn内容到git</h3></span>
+        <span itemprop="articleBody"><h2 id="c++_的文件操作">c++ 的文件操作</h2><p>资料 <a href="http://www.cplusplus.com/doc/tutorial/files/" target="_blank" rel="external">http://www.cplusplus.com/doc/tutorial/files/</a></p>
+</span>
       
     </div>
 
@@ -241,7 +202,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/svn/" rel="tag">#svn</a>
+            <a href="/tags/c/" rel="tag">#c++</a>
           
         </div>
       
@@ -250,13 +211,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/08/10/windows-tool/" rel="prev">windows_tool</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/14/objective-c-learn/" rel="next">学习objective-c</a>
+              <a href="/2016/08/12/cmake-des/" rel="next">cmake_des</a>
             
           </div>
         </div>
@@ -360,7 +319,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#从svn转向git"><span class="nav-number">1.</span> <span class="nav-text">从svn转向git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#缘由"><span class="nav-number">1.1.</span> <span class="nav-text">缘由</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#综合考虑"><span class="nav-number">1.1.1.</span> <span class="nav-text">综合考虑</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务器端部署git"><span class="nav-number">1.2.</span> <span class="nav-text">服务器端部署git</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#解决方案"><span class="nav-number">1.2.1.</span> <span class="nav-text">解决方案</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装gogs"><span class="nav-number">1.2.2.</span> <span class="nav-text">安装gogs</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#迁移svn内容到git"><span class="nav-number">1.3.</span> <span class="nav-text">迁移svn内容到git</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#c++_的文件操作"><span class="nav-number">1.</span> <span class="nav-text">c++ 的文件操作</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
