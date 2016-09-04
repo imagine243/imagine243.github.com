@@ -198,6 +198,130 @@
       
         
           <span itemprop="articleBody"><h2 id="c++_的文件操作">c++ 的文件操作</h2><p>资料 <a href="http://www.cplusplus.com/doc/tutorial/files/" target="_blank" rel="external">http://www.cplusplus.com/doc/tutorial/files/</a></p>
+<p>原来一直分不清c与c＋＋ 对文件的读写的不同，同时对c＋＋ 中文件读写也了解的不够详细，cplusplus 上的这篇文章详细易懂，写一下笔记。</p>
+<h3 id="文件操作类">文件操作类</h3><ul>
+<li>ofstream: Stream class to write on files</li>
+<li>ifstream: Stream class to read from files</li>
+<li><p>fstream: Stream class to both read and write from/to files.</p>
+<p>  // basic file operations<br>  #include <iostream><br>  #include <fstream><br>  using namespace std;</fstream></iostream></p>
+<p>  int main () {</p>
+<pre><code>ofstream myfile<span class="comment">;</span>
+myfile.open ("example.txt")<span class="comment">;</span>
+myfile &lt;&lt; "Writing this to a file.\n"<span class="comment">;</span>
+myfile.close()<span class="comment">;</span>
+return 0<span class="comment">;</span>
+</code></pre><p>  }</p>
+</li>
+</ul>
+<h3 id="打开关闭文件">打开关闭文件</h3><p>open(filename, mode)</p>
+<p>mode :</p>
+<ul>
+<li>ios::in    打开读取的文件</li>
+<li>ios::out    打开写入的文件</li>
+<li>ios::binary    以二进制的方式打开文件</li>
+<li><p>ios::ate    设置初始的指针在文件的末尾，如果没有设置这个，初始的指针在文件的开头<br>ios::app    All 所有的写入操作都会添加在文件的末尾<br>ios::trunc 如果写入的文件已经存在且有内容，原来的内容会被删除写入新的内容。</p>
+<p>  ofstream myfile;<br>  myfile.open (“example.bin”, ios::out | ios::app | ios::binary);</p>
+</li>
+</ul>
+<p>默认情况下：<br>ofstream ios::out<br>ifstream ios::in<br>fstream ios::in | ios::out</p>
+<p>这三个类的构造函数跟open函数有异样的作用</p>
+<pre><code>ofstream myfile <span class="list">(<span class="string">"example.bin"</span>, ios:<span class="keyword">:out</span> | ios::app | ios:<span class="keyword">:binary</span>)</span><span class="comment">;</span>
+</code></pre><p>可以使用is_open() 来检查文件是否成功的打开</p>
+<pre><code><span class="keyword">if</span> (myfile.<span class="keyword">is</span><span class="number">_</span>open()) { <span class="comment">/* ok, proceed with output */</span> }
+</code></pre><p>关闭文件</p>
+<pre><code>myfile.<span class="function"><span class="title">close</span><span class="params">()</span></span>
+</code></pre><h3 id="文本文件">文本文件</h3><pre><code><span class="comment">// writing on a text file</span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;fstream&gt;</span></span>
+<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;
+
+<span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>{
+  <span class="function">ofstream <span class="title">myfile</span> <span class="params">(<span class="string">"example.txt"</span>)</span></span>;
+  <span class="keyword">if</span> (myfile.is_open())
+  {
+    myfile &lt;&lt; <span class="string">"This is a line.\n"</span>;
+    myfile &lt;&lt; <span class="string">"This is another line.\n"</span>;
+    myfile.close();
+  }
+  <span class="keyword">else</span> <span class="built_in">cout</span> &lt;&lt; <span class="string">"Unable to open file"</span>;
+  <span class="keyword">return</span> <span class="number">0</span>;
+}
+
+<span class="comment">// reading a text file</span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;fstream&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span></span>
+<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;
+
+<span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>{
+  <span class="built_in">string</span> line;
+  <span class="function">ifstream <span class="title">myfile</span> <span class="params">(<span class="string">"example.txt"</span>)</span></span>;
+  <span class="keyword">if</span> (myfile.is_open())
+  {
+    <span class="keyword">while</span> ( getline (myfile,line) )
+    {
+      <span class="built_in">cout</span> &lt;&lt; line &lt;&lt; <span class="string">'\n'</span>;
+    }
+    myfile.close();
+  }
+
+  <span class="keyword">else</span> <span class="built_in">cout</span> &lt;&lt; <span class="string">"Unable to open file"</span>; 
+
+  <span class="keyword">return</span> <span class="number">0</span>;
+}
+</code></pre><h3 id="检查状态">检查状态</h3><ul>
+<li>bad()<br>Returns true if a reading or writing operation fails. For example, in the case that we try to write to a file that is not open for writing or if the device where we try to write has no space left.</li>
+<li>fail()<br>Returns true in the same cases as bad(), but also in the case that a format error happens, like when an alphabetical character is extracted when we are trying to read an integer number.</li>
+<li>eof()<br>Returns true if a file open for reading has reached the end.</li>
+<li>good()<br>It is the most generic state flag: it returns false in the same cases in which calling any of the previous functions would return true. Note that good and bad are not exact opposites (good checks more state flags at once).</li>
+</ul>
+<h3 id="读取写入的位置">读取写入的位置</h3><p>tellg() 和 tellp() 函数 返回值是 streampos类型的</p>
+<p>seekg() 和 seekp()</p>
+<p>seekg ( position );<br>seekp ( position );</p>
+<p>seekg ( offset, direction );<br>seekp ( offset, direction );</p>
+<ul>
+<li>ios::beg    offset counted from the beginning of the stream</li>
+<li>ios::cur    offset counted from the current position</li>
+<li><p>ios::end    offset counted from the end of the stream</p>
+<p>  // obtaining file size<br>  #include <iostream><br>  #include <fstream><br>  using namespace std;</fstream></iostream></p>
+<p>  int main () {</p>
+<pre><code>streampos <span class="keyword">begin</span>,<span class="keyword">end</span>;
+ifstream myfile (<span class="string">"example.bin"</span>, ios<span class="type-annotation">::</span>binary);
+<span class="keyword">begin</span> = myfile.tellg();
+myfile.seekg (<span class="number">0</span>, ios<span class="type-annotation">::</span><span class="keyword">end</span>);
+<span class="keyword">end</span> = myfile.tellg();
+myfile.close();
+cout &lt;&lt; <span class="string">"size is: "</span> &lt;&lt; (<span class="keyword">end</span>-<span class="keyword">begin</span>) &lt;&lt; <span class="string">" bytes.\n"</span>;
+<span class="keyword">return</span> <span class="number">0</span>;
+</code></pre><p>  }</p>
+</li>
+</ul>
+<h3 id="二进制">二进制</h3><pre><code><span class="comment">// reading an entire binary file</span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;fstream&gt;</span></span>
+<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;
+
+<span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>{
+  streampos size;
+  <span class="keyword">char</span> * memblock;
+
+  <span class="function">ifstream <span class="title">file</span> <span class="params">(<span class="string">"example.bin"</span>, ios::in|ios::binary|ios::ate)</span></span>;
+  <span class="keyword">if</span> (file.is_open())
+  {
+    size = file.tellg();
+    memblock = <span class="keyword">new</span> <span class="keyword">char</span> [size];
+    file.seekg (<span class="number">0</span>, ios::beg);
+    file.read (memblock, size);
+    file.close();
+
+    <span class="built_in">cout</span> &lt;&lt; <span class="string">"the entire file content is in memory"</span>;
+
+    <span class="keyword">delete</span>[] memblock;
+  }
+  <span class="keyword">else</span> <span class="built_in">cout</span> &lt;&lt; <span class="string">"Unable to open file"</span>;
+  <span class="keyword">return</span> <span class="number">0</span>;
+}
+</code></pre><h3 id="buffer和同步">buffer和同步</h3><p>在写入操作时是先写入了一块固定大小的buffer中，当文件关闭或者buffer满了就会写入文件，也可以调用sync() 将buffer写入文件</p>
 </span>
         
       
