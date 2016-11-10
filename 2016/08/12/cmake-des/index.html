@@ -39,16 +39,26 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="less is more">
+<meta name="description" content="CMake 使用
+在 Windows 下，下载安装 CMake 后，可以使用其 cmake-gui 程序：
+先在 “Where is the source code” 选择 json-tutorial/tutorial01，再在 “Where to build the binary” 键入上一个目录加上 /build。
+按 Configure，选择编译器，然后按 Generate 便会生成 Vis">
 <meta property="og:type" content="article">
 <meta property="og:title" content="cmake_des">
 <meta property="og:url" content="http://yoursite.com/2016/08/12/cmake-des/index.html">
 <meta property="og:site_name" content="imagine">
-<meta property="og:description" content="less is more">
-<meta property="og:updated_time" content="2016-08-20T05:11:14.000Z">
+<meta property="og:description" content="CMake 使用
+在 Windows 下，下载安装 CMake 后，可以使用其 cmake-gui 程序：
+先在 “Where is the source code” 选择 json-tutorial/tutorial01，再在 “Where to build the binary” 键入上一个目录加上 /build。
+按 Configure，选择编译器，然后按 Generate 便会生成 Vis">
+<meta property="og:image" content="http://yoursite.com/uploads/cmake-gui.png">
+<meta property="og:updated_time" content="2016-11-05T09:14:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="cmake_des">
-<meta name="twitter:description" content="less is more">
+<meta name="twitter:description" content="CMake 使用
+在 Windows 下，下载安装 CMake 后，可以使用其 cmake-gui 程序：
+先在 “Where is the source code” 选择 json-tutorial/tutorial01，再在 “Where to build the binary” 键入上一个目录加上 /build。
+按 Configure，选择编译器，然后按 Generate 便会生成 Vis">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -193,7 +203,21 @@
       
 
       
-        <span itemprop="articleBody"></span>
+        <span itemprop="articleBody"><p>CMake 使用</p>
+<p>在 Windows 下，下载安装 CMake 后，可以使用其 cmake-gui 程序：<br><img src="/uploads/cmake-gui.png" alt="cmake-gui"></p>
+<p>先在 “Where is the source code” 选择 json-tutorial/tutorial01，再在 “Where to build the binary” 键入上一个目录加上 /build。</p>
+<p>按 Configure，选择编译器，然后按 Generate 便会生成 Visual Studio 的 .sln 和 .vcproj 等文件。注意这个 build 目录都是生成的文件，可以随时删除，也不用上传至仓库。</p>
+<p>在 OS X 下，建议安装 <a href="http://brew.sh/" target="_blank" rel="external">Homebrew</a>，然后在命令行键入：</p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>brew install cmake</span><br><span class="line"><span class="variable">$ </span>cd github/json-tutorial/tutorial01</span><br><span class="line"><span class="variable">$ </span>mkdir build</span><br><span class="line"><span class="variable">$ </span>cd build</span><br><span class="line"><span class="variable">$ </span>cmake -<span class="constant">DCMAKE_BUILD_TYPE</span>=<span class="constant">Debug</span> ..</span><br><span class="line"><span class="variable">$ </span>make</span><br></pre></td></tr></table></figure>
+<p>这样会使用 GNU make 来生成项目，把 Debug 改成 Release 就会生成 Release 配置的 makefile。</p>
+<p>若你喜欢的话，CMake 也可以生成 Xcode 项目：</p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>cmake -<span class="constant">G</span> <span class="constant">Xcode</span> ..</span><br><span class="line"><span class="variable">$ </span>open leptjson_test.xcodeproj</span><br></pre></td></tr></table></figure>
+<p>而在 Ubuntu 下，可使用 <code>apt-get</code> 来安装：</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ apt-<span class="keyword">get</span> install cmake</span><br></pre></td></tr></table></figure>
+<p>无论使用什么平台及编译环境，编译运行后会出现：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ./leptjson_test</span><br><span class="line">/Users/miloyip/github/json-tutorial/tutorial01/test.c:<span class="number">56</span>: expect: <span class="number">3</span> actual: <span class="number">0</span></span><br><span class="line"><span class="number">11</span>/<span class="number">12</span> (<span class="number">91.67</span>%) passed</span><br></pre></td></tr></table></figure>
+<p>若看到类似以上的结果，说明已成功搭建编译环境，我们可以去看看那几个代码文件的内容了</p>
+</span>
       
     </div>
 
