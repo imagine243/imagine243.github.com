@@ -1,0 +1,1010 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
+
+
+    <meta name="description" content="less is more" />
+
+
+
+  <meta name="keywords" content="Hexo,next" />
+
+
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+
+<meta name="description" content="less is more">
+<meta property="og:type" content="website">
+<meta property="og:title" content="imagine">
+<meta property="og:url" content="http://yoursite.com/page/3/index.html">
+<meta property="og:site_name" content="imagine">
+<meta property="og:description" content="less is more">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="imagine">
+<meta name="twitter:description" content="less is more">
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'always'
+  };
+</script>
+
+  <title> imagine </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+  <div class="container one-column 
+   page-home 
+">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand" rel="start">
+      <span class="logo">
+        <i class="icon-next-logo"></i>
+      </span>
+      <span class="site-title">imagine</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon icon-next-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            <i class="menu-item-icon icon-next-categories"></i> <br />
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            <i class="menu-item-icon icon-next-archives"></i> <br />
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            <i class="menu-item-icon icon-next-tags"></i> <br />
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content"> 
+  <section id="posts" class="posts-expand">
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2016/08/01/svn2git/" itemprop="url">
+                svn2git
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2016-08-01T21:21:57+08:00" content="2016-08-01">
+            2016-08-01
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/git/" itemprop="url" rel="index">
+                  <span itemprop="name">git</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h2 id="从svn转向git">从svn转向git</h2><h3 id="缘由">缘由</h3><p>公司的unity项目使用的svn做项目的版本管理和协作，在实际使用中遇到几个问题。</p>
+<ol>
+<li>后端程序使用git作为代码版本管理，开发中经常出现客户端和后端提交代码不同步的问题， 客户端的代码每次提交不会是完整的功能，而后段是分支开发，每次都是完整功能完成后合并到master分支</li>
+<li>跟上面的问题有些相似，客户端因为不是分支开发的模式，在游戏的复杂的功能需求下，应对乏力，经常出现本地代码不能提交，手动合并代码的情况。</li>
+<li>现在游戏主要以海外版本为主，每个国家都对应的不同的分支，而且还有大版本的更新，svn在分支使用上非常的笨重，非常影响工作的效率，比如每个分支都要重新牵出，重新unity转平台，再比如修改bug需要合并到多个分支。svn缓慢的速度严重影响工作。</li>
+<li>打包机使用的是ssd，空间有限，svn的每一个分支都需要重新checkout项目，使用git后，在同一个项目切换分支，可以节省大量空间。</li>
+</ol>
+<p>但是使用git也有一定的弊端，我们unity项目在两个分支中如果有大量的图片不同，那么切换分支就需要大量的时间来转换图片。</p>
+<h4 id="综合考虑">综合考虑</h4><p>项目进入后期，主要以海外平台为主，特征是分支多，每个版本之间的资源改变小，是用git后可以解决原来的问题，上面所说的弊端只有很少情况下出现，如果真的有分支之间图片资源差异比较大，可以重新clone一份项目，使用svn的方式。</p>
+<h3 id="服务器端部署git">服务器端部署git</h3><h4 id="解决方案">解决方案</h4><ul>
+<li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000" target="_blank" rel="external">服务器只使用git</a></li>
+<li><a href="https://about.gitlab.com/" target="_blank" rel="external">gitlab</a></li>
+<li><a href="https://gogs.io/" target="_blank" rel="external">gogs</a></li>
+</ul>
+<p>最终选用gogs，功能相对齐全，已经满足我们的使用，安装十分简便， gitlab安装太复杂，珍惜时间。</p>
+<h4 id="安装gogs">安装gogs</h4><p>TODO</p>
+<h3 id="迁移svn内容到git">迁移svn内容到git</h3></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2015/11/14/objective-c-learn/" itemprop="url">
+                学习objective-c
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-11-14T10:42:19+08:00" content="2015-11-14">
+            2015-11-14
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/objective-c/" itemprop="url" rel="index">
+                  <span itemprop="name">objective-c</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h2 id="学习objective-c">学习objective-c</h2><h4 id="#import">#import</h4><p>#import 可以保证头文件只被包含一次，而不论实际引用了几次。相当于c++的 #ifdef方案。</p>
+<h4 id="NSString_@">NSString @</h4><p>双引号的字符串前面家上@符号，表示这个字符串是应该作为NSString类型处理。</p>
+<h4 id="BOOL类型">BOOL类型</h4><p>BOOL的值分别是YES和NO， 分别是通过＃define定义的 signed char 类型的 1和0.</p>
+<h4 id="NSLog()">NSLog()</h4><p>NSLog()可以使用％@来格式化打印一个对象，内容是对象的 description函数提供。</p>
+<h4 id="定义类">定义类</h4><p>头文件中定义</p>
+<pre><code><span class="comment">// Point.h</span>
+<span class="annotation">@interface</span> <span class="string">Point :</span> NSObject  <span class="comment">//类的声明 继承自NSObject</span>
+<span class="comment">// 成员变量区域</span>
+{
+    <span class="typename">int</span> x ;
+    <span class="typename">int</span> y ;
+}
+<span class="comment">// 声明的方法， 外部可以看见</span>
+- (<span class="typename">void</span>) <span class="string">SetX:</span> (<span class="typename">int</span>) x;
+
+- (<span class="typename">void</span>) <span class="string">SetY:</span> (<span class="typename">int</span>) y;
+
+<span class="comment">// 类声明的结束 </span>
+<span class="annotation">@end</span> <span class="comment">//Point 类名的注释</span>
+</code></pre><p>m文件中的实现</p>
+<pre><code><span class="comment">// Point.m</span>
+
+<span class="annotation">@implementation</span> Point <span class="comment">//类的实现 实现头文件中的声明 和 一些内部需要功能</span>
+
+- (<span class="typename">void</span>) <span class="string">SetX:</span> (<span class="typename">int</span>) x  <span class="comment">//实现函数 </span>
+{
+    <span class="comment">//self 相当于 c＋＋ 中的 this</span>
+    self.x = x;
+}
+
+- (<span class="typename">void</span>) <span class="string">SetY:</span> (<span class="typename">int</span>) y
+{
+    self.y = y;
+}
+
+<span class="comment">// 内部实现函数， 没有在 @interface中声明， 外部看不到， 但是因为objective－c的动态性，实际上外部还是能够调用的。</span>
+- (<span class="typename">void</span>) <span class="string">ReSetX:</span> (<span class="typename">int</span>) x <span class="string">SetY:</span> (<span class="typename">int</span>) y
+{
+    self.x = x;
+    self.y = y;
+}
+<span class="comment">// 类实现的结束声明</span>
+<span class="annotation">@end</span> <span class="comment">//Point</span>
+</code></pre><p>以上代码只是说明作用，并没有检查并编译运行，可能存在bug。</p>
+<h4 id="@class">@class</h4><p>@class 只是引入class ，与#import 不同 。</p>
+<h4 id="Foundation_Kit">Foundation Kit</h4><p>NSString 和 NSMutableString 就像 java中的String 和 StringBuffer ， NSString一旦创建就不可变，NSMutableString是可变的。</p>
+<p>NSArray数量不可变的，可以存储Objective－C的对象，不能存储c的数据类型。<br>NSMutableArray 是数量可变，可以增加和删除对象的数组。</p>
+<h4 id="特性">特性</h4><p>.h 文件中使用 @property 定义变量 .m 文件中使用 @synthesize 编译器自动生成实现<br>@property (copy) NSString <em> name  // 在set函数中拷贝传入的参数<br>@property (retain) NSString </em> name // 在set函数中持有传入的参数，对参数retain 引用计数＋1</p>
+<p>@property (readwrite, copy) NSString * name //可以读可以写<br>@property (readonly) float size //只能读</p>
+<p>@synthesize name ＝ realName  // 真正操作的变量是realName ， name只是生成的函数是 setName和 name。</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2015/10/13/Android-debugalbe/" itemprop="url">
+                Android中debug和release区分
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-10-13T17:46:23+08:00" content="2015-10-13">
+            2015-10-13
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/Android/" itemprop="url" rel="index">
+                  <span itemprop="name">Android</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h3 id="Android中debug和release区分">Android中debug和release区分</h3><p>在所有的软件项目中都有debug和release的区分<br>之前android都是通过自己手写一个boolean的变量分辨<br>现在发现android会在gen下自动生成BuildConfig,其中的DEBUG变量也是自动生成的。<br>DEBUG在平时调试是true，在签名打包后是false；</p>
+<p>根据这个DEBUG添加了Log类</p>
+<pre><code><span class="keyword">public</span> class TDLog {
+
+    <span class="keyword">private</span> static <span class="built_in">String</span> <span class="built_in">TAG</span> = <span class="string">"TDLog"</span>;
+
+    <span class="keyword">public</span> static <span class="literal">void</span> v(<span class="built_in">String</span> <span class="built_in">tag</span>, <span class="built_in">String</span> msg) {
+        <span class="keyword">if</span> (BuildConfig<span class="built_in">.</span>DEBUG) {
+            <span class="keyword">Log</span><span class="built_in">.</span>v(<span class="built_in">tag</span>, msg);
+        }
+    }
+
+    <span class="keyword">public</span> static <span class="literal">void</span> i(<span class="built_in">String</span> <span class="built_in">tag</span>, <span class="built_in">String</span> msg) {
+        <span class="keyword">if</span> (BuildConfig<span class="built_in">.</span>DEBUG) {
+            <span class="keyword">Log</span><span class="built_in">.</span>i(<span class="built_in">tag</span>, msg);
+        }
+    }
+
+    <span class="keyword">public</span> static <span class="literal">void</span> d(<span class="built_in">String</span> <span class="built_in">tag</span>, <span class="built_in">String</span> msg) {
+        <span class="keyword">if</span> (BuildConfig<span class="built_in">.</span>DEBUG) {
+            <span class="keyword">Log</span><span class="built_in">.</span>d(<span class="built_in">tag</span>, msg);
+        }
+    }
+
+    <span class="keyword">public</span> static <span class="literal">void</span> w(<span class="built_in">String</span> <span class="built_in">tag</span>, <span class="built_in">String</span> msg) {
+        <span class="keyword">if</span> (BuildConfig<span class="built_in">.</span>DEBUG) {
+            <span class="keyword">Log</span><span class="built_in">.</span>w(<span class="built_in">tag</span>, msg);
+        }
+    }
+
+    <span class="keyword">public</span> static <span class="literal">void</span> e(<span class="built_in">String</span> <span class="built_in">tag</span>, <span class="built_in">String</span> msg) {
+        <span class="keyword">if</span> (BuildConfig<span class="built_in">.</span>DEBUG) {
+            <span class="keyword">Log</span><span class="built_in">.</span>e(<span class="built_in">tag</span>, msg);
+        }
+    }
+
+    <span class="keyword">public</span> static <span class="literal">void</span> assertTrue(<span class="built_in">Boolean</span> isTrue, <span class="built_in">String</span> msg)
+    {
+        <span class="keyword">if</span> (BuildConfig<span class="built_in">.</span>DEBUG) {
+            <span class="keyword">if</span> (isTrue) {
+<span class="comment">//                Log.v(TAG, msg);</span>
+            }<span class="keyword">else</span> {
+                <span class="keyword">Log</span><span class="built_in">.</span>e(<span class="built_in">TAG</span>, msg);
+                throw <span class="literal">new</span> RuntimeException(msg);
+            }
+
+        }
+    }
+}
+</code></pre></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2015/10/06/Lua-lib/" itemprop="url">
+                Lua嵌入工程中
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-10-06T17:02:03+08:00" content="2015-10-06">
+            2015-10-06
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h3 id="Lua嵌入工程中">Lua嵌入工程中</h3><p>之前在cocos2dx中使用lua语言，感觉非常好用，简单，速度快，跟c／c++结合很容易。<br>在这里记录下lua接入工程中的方法。</p>
+<h3 id="Lua接入mac工程">Lua接入mac工程</h3><p>新建xcode mac 命令行工程。<br><img src="/uploads/lua_lib_1.png" alt="image"></p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2015/09/26/url-encode/" itemprop="url">
+                Url编码 UrlEncode
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-09-26T11:36:17+08:00" content="2015-09-26">
+            2015-09-26
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/http/" itemprop="url" rel="index">
+                  <span itemprop="name">http</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h3 id="Url编码">Url编码</h3><p>昨天在接华为的渠道sdk，通过把华为返回的accesstoken拼接到url中访问服务器登陆接口。<br>上午还是很正常的访问，下午就突然不能访问，服务器端查了下，原因是accesstoken中有一个”+”号.</p>
+<p>“+”是url中的保留字，不能在url的内容中出现，所以需要把accesstoken UrlEncode后再拼接到url中去访问服务器。</p>
+<p>这个问题在四年前就遇到过，这次还掉坑里，在这纪录一下。</p>
+<h3 id="URI的百分号编码">URI的百分号编码</h3><p>URI中分为保留字和非保留字，保留字是有特殊含义的字段.<br><img src="/uploads/url_encode_keyword.png" alt="image"></p>
+<p>对于保留字可以采用百分号编码，首先需要把该字符的ASCII的值表示为两个16进制的数字，然后在其前面放置转义字符“％”。<br>未保留字也可以采用相同的方式来编码，字符当前的标准是把字符专为UTF－8字序，然后对每个字节百分号编码，下面参考文档的链接就是这样。</p>
+<h5 id="参考文档">参考文档</h5><p><a href="https://zh.wikipedia.org/wiki/%E7%99%BE%E5%88%86%E5%8F%B7%E7%BC%96%E7%A0%81" target="_blank" rel="external">百分号编码</a></p>
+<blockquote>
+<p><a href="https://zh.wikipedia.org/wiki/%E7%99%BE%E5%88%86%E5%8F%B7%E7%BC%96%E7%A0%81" target="_blank" rel="external">https://zh.wikipedia.org/wiki/%E7%99%BE%E5%88%86%E5%8F%B7%E7%BC%96%E7%A0%81</a></p>
+</blockquote>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2015/09/19/mac-at-commond/" itemprop="url">
+                在mac终端中使用at命令
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-09-19T22:02:43+08:00" content="2015-09-19">
+            2015-09-19
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/mac/" itemprop="url" rel="index">
+                  <span itemprop="name">mac</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h3 id="在mac终端中使用at命令">在mac终端中使用at命令</h3><p>今天发现在mac下没有办法使用at命令。<br>提示到</p>
+<blockquote>
+<p>Note that at is implemented through the launchd(8) daemon periodically invoking atrun(8), which is disabled by default.  See atrun(8) for information about enabling atrun.</p>
+</blockquote>
+<p>接着man atrun</p>
+<blockquote>
+<p>The atrun utility runs commands queued by at(1).  It is invoked periodi-cally by launchd(8) as specified in the com.apple.atrun.plist propertylist.  By default the property list contains the Disabled key set to true, so atrun is never invoked.</p>
+<p>Execute the following command as root to enable atrun:<br>launchctl load -w /System/Library/LaunchDaemons/com.apple.atrun.plist</p>
+</blockquote>
+<p>看来只需要在mac中开启atrun的配置。</p>
+<h3 id="开启atrun配置">开启atrun配置</h3><p>修改 /System/Library/LaunchDaemons/com.apple.atrun.plist 文件，把其中true改为false<br>先调用 </p>
+<blockquote>
+<p>sudo launchctl unload -F /System/Library/LaunchDaemons/com.apple.atrun.plist<br>然后调用<br>sudo launchctl load -F /System/Library/LaunchDaemons/com.apple.atrun.plist</p>
+</blockquote>
+<h3 id="at_命令">at 命令</h3><blockquote>
+<p>$ at now + 1 minute<br>echo ‘test at commond ‘ &gt; test.txt</p>
+<eod>
+
+</eod></blockquote>
+<p><eod> 是ctrl ＋ D</eod></p>
+<p>然后就可以看到新建了一个test.txt文件， 内容是’test at commond’。</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2015/09/12/andriod-ant-package/" itemprop="url">
+                android使用ant打包
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-09-12T23:07:40+08:00" content="2015-09-12">
+            2015-09-12
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/Android/" itemprop="url" rel="index">
+                  <span itemprop="name">Android</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h3 id="android使用ant打包">android使用ant打包</h3><p>android 现在全方面都使用AndroidStudio，脚本打包也全面转向了使用 gradle， 官方的文档也全部都是gradle的。而现在的android游戏项目还是在使用eclipse，各种渠道，插件同样是eclipse的插件。所以记录下ant来打包android工程的方式。</p>
+<h3 id="android环境">android环境</h3><p>需要把 android命令，加入到环境变量中。<br>运行下面命令，查看下现在现在电脑上使用的androidsdk的版本。</p>
+<blockquote>
+<p>android list targets </p>
+</blockquote>
+<h3 id="生成ant打包脚本。">生成ant打包脚本。</h3><p>进入android的工程目录<br>运行下面命令，生成ant打包脚本build.xml, num是刚刚获得的androidsdk版本。</p>
+<blockquote>
+<p>android update project –path . –target num </p>
+</blockquote>
+<h3 id="ant_打包">ant 打包</h3><p>在android工程目录运行 ant，默认是help target<br>清理android工程</p>
+<blockquote>
+<p>ant clean</p>
+</blockquote>
+<p>打包android工程</p>
+<blockquote>
+<p>ant package </p>
+</blockquote>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/">&laquo;</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
+
+ </div>
+
+        
+
+        
+      </div>
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      <section class="site-overview">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/uploads/avatar.jpg" alt="imagine243" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">imagine243</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">less is more</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">27</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner"> <div class="copyright" >
+  
+  &copy; &nbsp; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="icon-next-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">imagine243</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+ </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+    
+    
+
+  
+
+
+  
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
+
+
+
+
+  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+      if (isMobile()) {
+        FastClick.attach(document.body);
+      }
+    });
+  </script>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/lazyload.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#posts").find('img').lazyload({
+        placeholder: "/images/loading.gif",
+        effect: "fadeIn"
+      });
+    });
+  </script>
+</body>
+</html>

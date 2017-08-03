@@ -1,0 +1,1211 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
+
+
+    <meta name="description" content="less is more" />
+
+
+
+  <meta name="keywords" content="Hexo,next" />
+
+
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+
+<meta name="description" content="less is more">
+<meta property="og:type" content="website">
+<meta property="og:title" content="imagine">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="imagine">
+<meta property="og:description" content="less is more">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="imagine">
+<meta name="twitter:description" content="less is more">
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'always'
+  };
+</script>
+
+  <title> imagine </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+  <div class="container one-column 
+   page-home 
+">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand" rel="start">
+      <span class="logo">
+        <i class="icon-next-logo"></i>
+      </span>
+      <span class="site-title">imagine</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon icon-next-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            <i class="menu-item-icon icon-next-categories"></i> <br />
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            <i class="menu-item-icon icon-next-archives"></i> <br />
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            <i class="menu-item-icon icon-next-tags"></i> <br />
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content"> 
+  <section id="posts" class="posts-expand">
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2017/02/27/cpp-2-1/" itemprop="url">
+                类型转换
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2017-02-27T14:53:11+08:00" content="2017-02-27">
+            2017-02-27
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h1 id="类型转换">类型转换</h1><p><img src="/uploads/14881784087961.jpg" alt=""></p>
+<p>• When we assign one of the nonbool arithmetic types to a bool object, the result is false if the value is 0 and true otherwise.</p>
+<p>• When we assign a bool to one of the other arithmetic types, the resulting value is 1 if the bool is true and 0 if the bool is false.</p>
+<p>• When we assign a floating-point value to an object of integral type, the value is truncated. The value that is stored is the part before the decimal point.</p>
+<p>• When we assign an integral value to an object of floating-point type, the fractional part is zero. Precision may be lost if the integer has more bits than the floating-point object can accommodate.</p>
+<p>• If we assign an out-of-range value to an object of unsigned type, the result is the remainder of the value modulo the number of values the target type can hold. For example, an 8-bit unsigned char can hold values from 0 through 255, inclusive. If we assign a value outside this range, the compiler assigns the remainder of that value modulo 256. Therefore, assigning –1 to an 8-bit unsigned char gives that object the value 255.</p>
+<p>• If we assign an out-of-range value to an object of signed type, the result is undefined. The program might appear to work, it might crash, or it might produce garbage values.</p>
+<p><img src="/uploads/14881789121875.jpg" alt=""></p>
+<p>经常遇到的 给一个类型赋值超出了他的表达范围时 可以使用这个方法。</p>
+<p>几个例子 </p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">unsigned</span> <span class="keyword">char</span> c ;</span><br><span class="line"><span class="keyword">int</span> i;</span><br><span class="line">c = -<span class="number">5</span>;</span><br><span class="line">i = c;</span><br><span class="line"><span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"unsigned char c is "</span> &lt;&lt; c &lt;&lt; <span class="string">"  "</span> &lt;&lt; i &lt;&lt;<span class="built_in">std</span>::endl;</span><br><span class="line"></span><br><span class="line">c = -<span class="number">246</span>;</span><br><span class="line">i = c;</span><br><span class="line"><span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"unsigned char c is "</span> &lt;&lt; c &lt;&lt; <span class="string">"  "</span> &lt;&lt; i &lt;&lt;<span class="built_in">std</span>::endl;</span><br><span class="line"></span><br><span class="line">c = <span class="number">266</span>;</span><br><span class="line">i = c;</span><br><span class="line"><span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"unsigned char c is "</span> &lt;&lt; c &lt;&lt; <span class="string">"  "</span> &lt;&lt; i &lt;&lt;<span class="built_in">std</span>::endl;</span><br></pre></td></tr></table></figure>
+<p>输出是</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">unsigned</span> <span class="keyword">char</span> c is \<span class="number">373</span>  <span class="number">251</span></span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">char</span> c is </span><br><span class="line">  <span class="number">10</span></span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">char</span> c is </span><br><span class="line">  <span class="number">10</span></span><br></pre></td></tr></table></figure>
+<p><img src="/uploads/14881820834730.jpg" alt=""></p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2017/02/24/cpp-1-5/" itemprop="url">
+                通过cin>> 读取 和cout<< 打印的类
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2017-02-24T11:15:39+08:00" content="2017-02-24">
+            2017-02-24
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h1 id="通过cin&gt;&gt;_读取_和cout&lt;&lt;_打印的类">通过cin&gt;&gt; 读取 和cout&lt;&lt; 打印的类</h1><p>在cpp primer 1.5章中第一次出现的Sales_item类 这个类可以支持标准库中的 cin&gt;&gt; 读取 和cout&lt;&lt; 打印，同时还大量重载了操作符，是一个很好的例子。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span><br><span class="line"> * This file contains code from "C++ Primer, Fifth Edition", by Stanley B.</span><br><span class="line"> * Lippman, Josee Lajoie, and Barbara E. Moo, and is covered under the</span><br><span class="line"> * copyright and warranty notices given in that book:</span><br><span class="line"> * </span><br><span class="line"> * "Copyright (c) 2013 by Objectwrite, Inc., Josee Lajoie, and Barbara E. Moo."</span><br><span class="line"> * </span><br><span class="line"> * </span><br><span class="line"> * "The authors and publisher have taken care in the preparation of this book,</span><br><span class="line"> * but make no expressed or implied warranty of any kind and assume no</span><br><span class="line"> * responsibility for errors or omissions. No liability is assumed for</span><br><span class="line"> * incidental or consequential damages in connection with or arising out of the</span><br><span class="line"> * use of the information or programs contained herein."</span><br><span class="line"> * </span><br><span class="line"> * Permission is granted for this code to be used for educational purposes in</span><br><span class="line"> * association with the book, given proper citation if and when posted or</span><br><span class="line"> * reproduced.Any commercial use of this code requires the explicit written</span><br><span class="line"> * permission of the publisher, Addison-Wesley Professional, a division of</span><br><span class="line"> * Pearson Education, Inc. Send your request for permission, stating clearly</span><br><span class="line"> * what code you would like to use, and in what specific way, to the following</span><br><span class="line"> * address: </span><br><span class="line"> * </span><br><span class="line"> *     Pearson Education, Inc.</span><br><span class="line"> *     Rights and Permissions Department</span><br><span class="line"> *     One Lake Street</span><br><span class="line"> *     Upper Saddle River, NJ  07458</span><br><span class="line"> *     Fax: (201) 236-3290</span><br><span class="line">*/</span> </span><br><span class="line"></span><br><span class="line"><span class="comment">/* This file defines the Sales_item class used in chapter 1.</span><br><span class="line"> * The code used in this file will be explained in</span><br><span class="line"> * Chapter 7 (Classes) and Chapter 14 (Overloaded Operators)</span><br><span class="line"> * Readers shouldn't try to understand the code in this file</span><br><span class="line"> * until they have read those chapters.</span><br><span class="line">*/</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#<span class="keyword">ifndef</span> SALESITEM_H</span></span><br><span class="line"><span class="comment">// we're here only if SALESITEM_H has not yet been defined </span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> SALESITEM_H</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Definition of Sales_item class and related functions goes here</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> Sales_item &#123;</span><br><span class="line"><span class="comment">// these declarations are explained section 7.2.1, p. 270 </span></span><br><span class="line"><span class="comment">// and in chapter 14, pages 557, 558, 561</span></span><br><span class="line"><span class="keyword">friend</span> <span class="built_in">std</span>::istream&amp; <span class="keyword">operator</span>&gt;&gt;(<span class="built_in">std</span>::istream&amp;, Sales_item&amp;);</span><br><span class="line"><span class="keyword">friend</span> <span class="built_in">std</span>::ostream&amp; <span class="keyword">operator</span>&lt;&lt;(<span class="built_in">std</span>::ostream&amp;, <span class="keyword">const</span> Sales_item&amp;);</span><br><span class="line"><span class="keyword">friend</span> <span class="keyword">bool</span> <span class="keyword">operator</span>&lt;(<span class="keyword">const</span> Sales_item&amp;, <span class="keyword">const</span> Sales_item&amp;);</span><br><span class="line"><span class="keyword">friend</span> <span class="keyword">bool</span> </span><br><span class="line"><span class="keyword">operator</span>==(<span class="keyword">const</span> Sales_item&amp;, <span class="keyword">const</span> Sales_item&amp;);</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">// constructors are explained in section 7.1.4, pages 262 - 265</span></span><br><span class="line">    <span class="comment">// default constructor needed to initialize members of built-in type</span></span><br><span class="line">    Sales_item() = <span class="keyword">default</span>;</span><br><span class="line">    Sales_item(<span class="keyword">const</span> <span class="built_in">std</span>::<span class="built_in">string</span> &amp;book): bookNo(book) &#123; &#125;</span><br><span class="line">    Sales_item(<span class="built_in">std</span>::istream &amp;is) &#123; is &gt;&gt; *<span class="keyword">this</span>; &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">// operations on Sales_item objects</span></span><br><span class="line">    <span class="comment">// member binary operator: left-hand operand bound to implicit this pointer</span></span><br><span class="line">    Sales_item&amp; <span class="keyword">operator</span>+=(<span class="keyword">const</span> Sales_item&amp;);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// operations on Sales_item objects</span></span><br><span class="line">    <span class="built_in">std</span>::<span class="function"><span class="built_in">string</span> <span class="title">isbn</span><span class="params">()</span> <span class="keyword">const</span> </span>&#123; <span class="keyword">return</span> bookNo; &#125;</span><br><span class="line">    <span class="function"><span class="keyword">double</span> <span class="title">avg_price</span><span class="params">()</span> <span class="keyword">const</span></span>;</span><br><span class="line"><span class="comment">// private members as before</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">string</span> bookNo;      <span class="comment">// implicitly initialized to the empty string</span></span><br><span class="line">    <span class="keyword">unsigned</span> units_sold = <span class="number">0</span>; <span class="comment">// explicitly initialized</span></span><br><span class="line">    <span class="keyword">double</span> revenue = <span class="number">0.0</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// used in chapter 10</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span></span><br><span class="line"><span class="keyword">bool</span> <span class="title">compareIsbn</span><span class="params">(<span class="keyword">const</span> Sales_item &amp;lhs, <span class="keyword">const</span> Sales_item &amp;rhs)</span> </span><br><span class="line"></span>&#123; <span class="keyword">return</span> lhs.isbn() == rhs.isbn(); &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// nonmember binary operator: must declare a parameter for each operand</span></span><br><span class="line">Sales_item <span class="keyword">operator</span>+(<span class="keyword">const</span> Sales_item&amp;, <span class="keyword">const</span> Sales_item&amp;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">inline</span> <span class="keyword">bool</span> </span><br><span class="line"><span class="keyword">operator</span>==(<span class="keyword">const</span> Sales_item &amp;lhs, <span class="keyword">const</span> Sales_item &amp;rhs)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// must be made a friend of Sales_item</span></span><br><span class="line">    <span class="keyword">return</span> lhs.units_sold == rhs.units_sold &amp;&amp;</span><br><span class="line">           lhs.revenue == rhs.revenue &amp;&amp;</span><br><span class="line">           lhs.isbn() == rhs.isbn();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">inline</span> <span class="keyword">bool</span> </span><br><span class="line"><span class="keyword">operator</span>!=(<span class="keyword">const</span> Sales_item &amp;lhs, <span class="keyword">const</span> Sales_item &amp;rhs)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> !(lhs == rhs); <span class="comment">// != defined in terms of operator==</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// assumes that both objects refer to the same ISBN</span></span><br><span class="line">Sales_item&amp; Sales_item::<span class="keyword">operator</span>+=(<span class="keyword">const</span> Sales_item&amp; rhs) </span><br><span class="line">&#123;</span><br><span class="line">    units_sold += rhs.units_sold; </span><br><span class="line">    revenue += rhs.revenue; </span><br><span class="line">    <span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// assumes that both objects refer to the same ISBN</span></span><br><span class="line">Sales_item </span><br><span class="line"><span class="keyword">operator</span>+(<span class="keyword">const</span> Sales_item&amp; lhs, <span class="keyword">const</span> Sales_item&amp; rhs) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="function">Sales_item <span class="title">ret</span><span class="params">(lhs)</span></span>;  <span class="comment">// copy (|lhs|) into a local object that we'll return</span></span><br><span class="line">    ret += rhs;           <span class="comment">// add in the contents of (|rhs|) </span></span><br><span class="line">    <span class="keyword">return</span> ret;           <span class="comment">// return (|ret|) by value</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">std</span>::istream&amp; </span><br><span class="line"><span class="keyword">operator</span>&gt;&gt;(<span class="built_in">std</span>::istream&amp; in, Sales_item&amp; s)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">double</span> price;</span><br><span class="line">    in &gt;&gt; s.bookNo &gt;&gt; s.units_sold &gt;&gt; price;</span><br><span class="line">    <span class="comment">// check that the inputs succeeded</span></span><br><span class="line">    <span class="keyword">if</span> (in)</span><br><span class="line">        s.revenue = s.units_sold * price;</span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">        s = Sales_item();  <span class="comment">// input failed: reset object to default state</span></span><br><span class="line">    <span class="keyword">return</span> in;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">std</span>::ostream&amp; </span><br><span class="line"><span class="keyword">operator</span>&lt;&lt;(<span class="built_in">std</span>::ostream&amp; out, <span class="keyword">const</span> Sales_item&amp; s)</span><br><span class="line">&#123;</span><br><span class="line">    out &lt;&lt; s.isbn() &lt;&lt; <span class="string">" "</span> &lt;&lt; s.units_sold &lt;&lt; <span class="string">" "</span></span><br><span class="line">        &lt;&lt; s.revenue &lt;&lt; <span class="string">" "</span> &lt;&lt; s.avg_price();</span><br><span class="line">    <span class="keyword">return</span> out;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">double</span> Sales_item::avg_price() <span class="keyword">const</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (units_sold) </span><br><span class="line">        <span class="keyword">return</span> revenue/units_sold; </span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2017/02/23/cpp-summary/" itemprop="url">
+                summary about reading <<cpp primer>>
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2017-02-23T18:11:54+08:00" content="2017-02-23">
+            2017-02-23
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h1 id="summary_about_reading_&lt;&gt;">summary about reading &lt;<cpp primer="">&gt;</cpp></h1><h2 id="Entering_an_End-of-File_from_the_Keyboard">Entering an End-of-File from the Keyboard</h2><p>When we enter input to a program from the keyboard, different operating systems use different conventions to allow us to indicate end-of-file. On Windows systems we enter an end-of-file by typing a control-z—hold down the Ctrl key and press z—followed by hitting either the Enter or Return key. On UNIX systems, including on Mac OS X machines, end-of-file is usually control-d.</p>
+<p>输入文件终止符 </p>
+<p>从键盘上输入文件终止符 在windows上是 ctrl + z 在unix系统上包括mac 是ctrl + d.</p>
+<h2 id="Using_File_Redirection">Using File Redirection</h2><p>It can be tedious to repeatedly type these transactions as input to the programs you are testing. Most operating systems support file redirection, which lets us associate a named file with the standard input and the standard output:</p>
+<p>$ addItems <infile>outfile</infile></p>
+<p>Assuming $ is the system prompt and our addition program has been compiled into an executable file named addItems.exe (or addItems on UNIX systems), this command will read transactions from a file named infile and write its output to a file named outfile in the current directory.</p>
+<p>使用文件重定向 我们可以使用文件重定向到程序中的输入 cin 输出 cout ，这样程序就可以使用文件作为输入和输出。</p>
+<h1 id="Advice:_Deciding_which_Type_to_Use">Advice: Deciding which Type to Use</h1><p>C++, like C, is designed to let programs get close to the hardware when necessary. The arithmetic types are defined to cater to the peculiarities of various kinds of hardware. Accordingly, the number of arithmetic types in C++ can be bewildering. Most programmers can (and should) ignore these complexities by restricting the types they use. A few rules of thumb can be useful in deciding which type to use:</p>
+<p>• Use an unsigned type when you know that the values cannot be negative.</p>
+<p>• Use int for integer arithmetic. short is usually too small and, in practice, long often has the same size as int. If your data values are larger than the minimum guaranteed size of an int, then use long long.</p>
+<p>• Do not use plain char or bool in arithmetic expressions. Use them only to hold characters or truth values. Computations using char are especially problematic because char is signed on some machines and unsigned on others. If you need a tiny integer, explicitly specify either signed char or unsigned char.</p>
+<p>• Use double for floating-point computations; float usually does not have enough precision, and the cost of double-precision calculations versus single-precision is negligible. In fact, on some machines, double-precision operations are faster than single. The precision offered by long double usually is unnecessary and often entails considerable run-time cost.</p>
+<p>建议 使用哪种类型</p>
+<ul>
+<li>去定是正数时使用 unsigned 类型</li>
+<li>使用int做数值运算</li>
+<li>不要char 和 bool 类型 在算数运算中</li>
+<li>使用 double类型做浮点运算</li>
+</ul>
+<h1 id="建议：避免强制类型转换">建议：避免强制类型转换</h1><p><img src="/uploads/14889592935857.jpg" alt=""></p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2017/02/23/cpp-1-4/" itemprop="url">
+                Reading an Unknown Number of Inputs
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2017-02-23T17:58:50+08:00" content="2017-02-23">
+            2017-02-23
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h1 id="Reading_an_Unknown_Number_of_Inputs">Reading an Unknown Number of Inputs</h1><p>code is </p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[])</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> value = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">std</span>::<span class="built_in">cin</span> &gt;&gt; value) &#123;</span><br><span class="line">        sum += value;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"sum is "</span> &lt;&lt; sum &lt;&lt; <span class="built_in">std</span>::endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>When we use an istream as a condition, the effect is to test the state of the stream. If the stream is valid—that is, if the stream hasn’t encountered an error—then the test succeeds. An istream becomes invalid when we hit end-of-file or encounter an invalid input, such as reading a value that is not an integer. An istream that is in an invalid state will cause the condition to yield false.</p>
+<p>当我们使用istream当作一个条件变量时， 相当于测试这个stream的状态，当是stream是合法的，stream不会触犯一个error，这个测试就是成功的，返回true。 当istream读取到文件末尾符 或者读区到不合法的输入 （比如不适int类型的）istream就会处在一个不合法的状态，返回false。</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2017/02/23/cpp-1-2/" itemprop="url">
+                A First Look at Input/Output
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2017-02-23T17:35:02+08:00" content="2017-02-23">
+            2017-02-23
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h2 id="A_First_Look_at_Input/Output">A First Look at Input/Output</h2><p>需要导入标准库中的iostream库</p>
+<pre><code><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span>
+</code></pre></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2017/02/16/work-notify/" itemprop="url">
+                work_notify
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2017-02-16T14:31:00+08:00" content="2017-02-16">
+            2017-02-16
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h3 id="效率提高_－_工作中的通知">效率提高 － 工作中的通知</h3><p>工作中经常有一些在命令行下的的任务，不需要实时看着，同时需要大量的时间。<br>这样的任务只需要工作完成后通知一下就可以。添加了一个系统的通知命令来实现。</p>
+<h4 id="添加命令">添加命令</h4><p>参考的这里的答案  <a href="http://apple.stackexchange.com/questions/57412/how-can-i-trigger-a-notification-center-notification-from-an-applescript-or-shel" target="_blank" rel="external">参考链接</a></p>
+<p>AppleScript 可以发送系统的通知 命令如下</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">osascript -e 'display notification "Lo<span class="comment">rem ipsum dolor sit amet" with title "Title"'</span></span><br></pre></td></tr></table></figure>
+<p><img src="/uploads/apple_sript_notify.png" alt="apple_sript_notify"></p>
+<p>我们在/usr/local/bin 下添加一个名字是notify的脚本，然后chmod ＋x 添加执行权限，脚本如下。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/bash</span></span><br><span class="line">/usr/bin/osascript <span class="operator">-e</span> <span class="string">"display notification \"$*\" with title \"<span class="variable">$1</span>\" "</span></span><br></pre></td></tr></table></figure>
+<p>现在我们可以使用通知了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">notify job <span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<p>延时5s通知</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">sleep</span> <span class="number">5</span>; <span class="title">notify</span> job done</span><br></pre></td></tr></table></figure>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2016/10/19/cpp-duotai/" itemprop="url">
+                cpp_duotai
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2016-10-19T19:53:54+08:00" content="2016-10-19">
+            2016-10-19
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h2 id="c++的运行时多态">c++的运行时多态</h2><p>之前看到一个介绍c＋＋多态的例子，亲手实验的结果与我设想的结果不一致，我自己在这个问题上产生了错误。<br>例子是：</p>
+<pre><code><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span>
+
+<span class="keyword">class</span> A
+{
+    <span class="keyword">public</span> :
+    <span class="keyword">virtual</span> ~A()
+    {
+        <span class="built_in">std</span>::<span class="built_in">cout</span>&lt;&lt; <span class="string">"A deleted"</span> &lt;&lt;<span class="built_in">std</span>::endl;
+    };
+    <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">out1</span><span class="params">()</span> </span>= <span class="number">0</span>;
+    <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">out2</span><span class="params">()</span>
+    </span>{
+        <span class="built_in">std</span>::<span class="built_in">cout</span>&lt;&lt; <span class="string">"A (out2) "</span>&lt;&lt;<span class="built_in">std</span>::endl;
+    }
+
+    <span class="function"><span class="keyword">void</span> <span class="title">out3</span><span class="params">()</span>
+    </span>{
+        <span class="built_in">std</span>::<span class="built_in">cout</span>&lt;&lt; <span class="string">"A (out3) "</span>&lt;&lt;<span class="built_in">std</span>::endl;
+    }
+};
+
+
+<span class="keyword">class</span> B : <span class="keyword">public</span> A
+{
+<span class="keyword">public</span>:
+    <span class="keyword">virtual</span> ~B()
+    {
+        <span class="built_in">std</span>::<span class="built_in">cout</span>&lt;&lt; <span class="string">"B deleted"</span> &lt;&lt;<span class="built_in">std</span>::endl;
+    };
+
+    <span class="function"><span class="keyword">void</span> <span class="title">out1</span><span class="params">()</span>
+    </span>{
+        <span class="built_in">std</span>::<span class="built_in">cout</span>&lt;&lt; <span class="string">"B (out1) "</span> &lt;&lt;<span class="built_in">std</span>::endl;
+    }
+
+    <span class="function"><span class="keyword">void</span> <span class="title">out2</span><span class="params">()</span>
+    </span>{
+        <span class="built_in">std</span>::<span class="built_in">cout</span>&lt;&lt; <span class="string">"B (out2) "</span> &lt;&lt;<span class="built_in">std</span>::endl;
+    }
+
+    <span class="function"><span class="keyword">void</span> <span class="title">out3</span><span class="params">()</span>
+    </span>{
+        <span class="built_in">std</span>::<span class="built_in">cout</span>&lt;&lt; <span class="string">"B (out3) "</span> &lt;&lt;<span class="built_in">std</span>::endl;
+    }
+};
+
+<span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[])</span> </span>{   
+    A * a = <span class="keyword">new</span> B;
+    a-&gt;out1();
+    a-&gt;out2();
+    a-&gt;out3();
+
+    B * b = <span class="keyword">new</span> B;
+    b-&gt;out1();
+    b-&gt;out2();
+    b-&gt;out3();
+
+    B * c = <span class="keyword">new</span> B;
+    c-&gt;B::out1();
+    c-&gt;A::out2();
+    c-&gt;A::out3();
+
+    <span class="keyword">delete</span> a;
+    <span class="keyword">delete</span> b;
+    <span class="keyword">delete</span> c;
+
+    <span class="keyword">return</span> <span class="number">0</span>;
+}
+</code></pre><h3 id="笔记">笔记</h3><p>A::out1() 是纯虚函数 只能被子类实现，不能直接调用  c-&gt;A::out1() 是错误的</p>
+<p> a-&gt;out3() 调用的是A::out3() out3 是一个普通的函数  a指针是A类型的所以调用的是A::out3()  (震惊到我了)</p>
+<p> out2 是虚函数 实现了运行时多态 父类的指针在运行时动态执行子类的out2函数</p>
+<p> 总结 out1 纯虚函数 就像是java中的接口定义了子类必须要实现的行为<br>      out2  虚函数 在cpp中实现了运行时多态<br>     out3 普通函数  子类的out3并不会替代父类中的out3，而是同时存在，根据指针类型来调用 或者显式的声明调用的是哪个函数 通过A::out3() 或者 B::out3() 这样的方式</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2016/09/03/cpp-file/" itemprop="url">
+                未命名
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2016-09-03T23:16:02+08:00" content="2016-09-03">
+            2016-09-03
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h2 id="c++_的文件操作">c++ 的文件操作</h2><p>资料 <a href="http://www.cplusplus.com/doc/tutorial/files/" target="_blank" rel="external">http://www.cplusplus.com/doc/tutorial/files/</a></p>
+<p>原来一直分不清c与c＋＋ 对文件的读写的不同，同时对c＋＋ 中文件读写也了解的不够详细，cplusplus 上的这篇文章详细易懂，写一下笔记。</p>
+<h3 id="文件操作类">文件操作类</h3><ul>
+<li>ofstream: Stream class to write on files</li>
+<li>ifstream: Stream class to read from files</li>
+<li><p>fstream: Stream class to both read and write from/to files.</p>
+<p>  // basic file operations<br>  #include <iostream><br>  #include <fstream><br>  using namespace std;</fstream></iostream></p>
+<p>  int main () {</p>
+<pre><code>ofstream myfile<span class="comment">;</span>
+myfile.open ("example.txt")<span class="comment">;</span>
+myfile &lt;&lt; "Writing this to a file.\n"<span class="comment">;</span>
+myfile.close()<span class="comment">;</span>
+return 0<span class="comment">;</span>
+</code></pre><p>  }</p>
+</li>
+</ul>
+<h3 id="打开关闭文件">打开关闭文件</h3><p>open(filename, mode)</p>
+<p>mode :</p>
+<ul>
+<li>ios::in    打开读取的文件</li>
+<li>ios::out    打开写入的文件</li>
+<li>ios::binary    以二进制的方式打开文件</li>
+<li><p>ios::ate    设置初始的指针在文件的末尾，如果没有设置这个，初始的指针在文件的开头<br>ios::app    All 所有的写入操作都会添加在文件的末尾<br>ios::trunc 如果写入的文件已经存在且有内容，原来的内容会被删除写入新的内容。</p>
+<p>  ofstream myfile;<br>  myfile.open (“example.bin”, ios::out | ios::app | ios::binary);</p>
+</li>
+</ul>
+<p>默认情况下：<br>ofstream ios::out<br>ifstream ios::in<br>fstream ios::in | ios::out</p>
+<p>这三个类的构造函数跟open函数有异样的作用</p>
+<pre><code>ofstream myfile <span class="list">(<span class="string">"example.bin"</span>, ios:<span class="keyword">:out</span> | ios::app | ios:<span class="keyword">:binary</span>)</span><span class="comment">;</span>
+</code></pre><p>可以使用is_open() 来检查文件是否成功的打开</p>
+<pre><code><span class="keyword">if</span> (myfile.<span class="keyword">is</span><span class="number">_</span>open()) { <span class="comment">/* ok, proceed with output */</span> }
+</code></pre><p>关闭文件</p>
+<pre><code>myfile.<span class="function"><span class="title">close</span><span class="params">()</span></span>
+</code></pre><h3 id="文本文件">文本文件</h3><pre><code><span class="comment">// writing on a text file</span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;fstream&gt;</span></span>
+<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;
+
+<span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>{
+  <span class="function">ofstream <span class="title">myfile</span> <span class="params">(<span class="string">"example.txt"</span>)</span></span>;
+  <span class="keyword">if</span> (myfile.is_open())
+  {
+    myfile &lt;&lt; <span class="string">"This is a line.\n"</span>;
+    myfile &lt;&lt; <span class="string">"This is another line.\n"</span>;
+    myfile.close();
+  }
+  <span class="keyword">else</span> <span class="built_in">cout</span> &lt;&lt; <span class="string">"Unable to open file"</span>;
+  <span class="keyword">return</span> <span class="number">0</span>;
+}
+
+<span class="comment">// reading a text file</span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;fstream&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span></span>
+<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;
+
+<span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>{
+  <span class="built_in">string</span> line;
+  <span class="function">ifstream <span class="title">myfile</span> <span class="params">(<span class="string">"example.txt"</span>)</span></span>;
+  <span class="keyword">if</span> (myfile.is_open())
+  {
+    <span class="keyword">while</span> ( getline (myfile,line) )
+    {
+      <span class="built_in">cout</span> &lt;&lt; line &lt;&lt; <span class="string">'\n'</span>;
+    }
+    myfile.close();
+  }
+
+  <span class="keyword">else</span> <span class="built_in">cout</span> &lt;&lt; <span class="string">"Unable to open file"</span>; 
+
+  <span class="keyword">return</span> <span class="number">0</span>;
+}
+</code></pre><h3 id="检查状态">检查状态</h3><ul>
+<li>bad()<br>Returns true if a reading or writing operation fails. For example, in the case that we try to write to a file that is not open for writing or if the device where we try to write has no space left.</li>
+<li>fail()<br>Returns true in the same cases as bad(), but also in the case that a format error happens, like when an alphabetical character is extracted when we are trying to read an integer number.</li>
+<li>eof()<br>Returns true if a file open for reading has reached the end.</li>
+<li>good()<br>It is the most generic state flag: it returns false in the same cases in which calling any of the previous functions would return true. Note that good and bad are not exact opposites (good checks more state flags at once).</li>
+</ul>
+<h3 id="读取写入的位置">读取写入的位置</h3><p>tellg() 和 tellp() 函数 返回值是 streampos类型的</p>
+<p>seekg() 和 seekp()</p>
+<p>seekg ( position );<br>seekp ( position );</p>
+<p>seekg ( offset, direction );<br>seekp ( offset, direction );</p>
+<ul>
+<li>ios::beg    offset counted from the beginning of the stream</li>
+<li>ios::cur    offset counted from the current position</li>
+<li><p>ios::end    offset counted from the end of the stream</p>
+<p>  // obtaining file size<br>  #include <iostream><br>  #include <fstream><br>  using namespace std;</fstream></iostream></p>
+<p>  int main () {</p>
+<pre><code>streampos <span class="keyword">begin</span>,<span class="keyword">end</span>;
+ifstream myfile (<span class="string">"example.bin"</span>, ios<span class="type-annotation">::</span>binary);
+<span class="keyword">begin</span> = myfile.tellg();
+myfile.seekg (<span class="number">0</span>, ios<span class="type-annotation">::</span><span class="keyword">end</span>);
+<span class="keyword">end</span> = myfile.tellg();
+myfile.close();
+cout &lt;&lt; <span class="string">"size is: "</span> &lt;&lt; (<span class="keyword">end</span>-<span class="keyword">begin</span>) &lt;&lt; <span class="string">" bytes.\n"</span>;
+<span class="keyword">return</span> <span class="number">0</span>;
+</code></pre><p>  }</p>
+</li>
+</ul>
+<h3 id="二进制">二进制</h3><pre><code><span class="comment">// reading an entire binary file</span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;fstream&gt;</span></span>
+<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;
+
+<span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>{
+  streampos size;
+  <span class="keyword">char</span> * memblock;
+
+  <span class="function">ifstream <span class="title">file</span> <span class="params">(<span class="string">"example.bin"</span>, ios::in|ios::binary|ios::ate)</span></span>;
+  <span class="keyword">if</span> (file.is_open())
+  {
+    size = file.tellg();
+    memblock = <span class="keyword">new</span> <span class="keyword">char</span> [size];
+    file.seekg (<span class="number">0</span>, ios::beg);
+    file.read (memblock, size);
+    file.close();
+
+    <span class="built_in">cout</span> &lt;&lt; <span class="string">"the entire file content is in memory"</span>;
+
+    <span class="keyword">delete</span>[] memblock;
+  }
+  <span class="keyword">else</span> <span class="built_in">cout</span> &lt;&lt; <span class="string">"Unable to open file"</span>;
+  <span class="keyword">return</span> <span class="number">0</span>;
+}
+</code></pre><h3 id="buffer和同步">buffer和同步</h3><p>在写入操作时是先写入了一块固定大小的buffer中，当文件关闭或者buffer满了就会写入文件，也可以调用sync() 将buffer写入文件</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2016/08/12/cmake-des/" itemprop="url">
+                cmake_des
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2016-08-12T19:19:32+08:00" content="2016-08-12">
+            2016-08-12
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h1 id="学习_cmake">学习 cmake</h1></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2016/08/10/windows-tool/" itemprop="url">
+                windows_tool
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2016-08-10T14:59:19+08:00" content="2016-08-10">
+            2016-08-10
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h1 id="全平台工具">全平台工具</h1><h3 id="云存储">云存储</h3><ul>
+<li><a href="https://www.jianguoyun.com/" target="_blank" rel="external">坚果云</a> 存储重要资料，个人数据，配置文件</li>
+<li><a href="https://yun.baidu.com" target="_blank" rel="external">百度云</a> 看电影</li>
+</ul>
+<h3 id="Markdown">Markdown</h3><ul>
+<li><a href="http://www.typora.io/" target="_blank" rel="external">typora</a> 功能强大的的Markdown 编辑器 图片导入<h3 id="git_tool">git tool</h3></li>
+<li>SourceTree</li>
+</ul>
+<h1 id="windows_工具">windows 工具</h1><h3 id="visual_assist_x_大番茄vs插件">visual assist x 大番茄vs插件</h3><p>度娘盘／软件／visual assist x／<br>搜索出破解中的的两个dll文件 并替换</p>
+<h3 id="sinppet_tool">sinppet tool</h3><ul>
+<li>PhraseExpress</li>
+</ul>
+<h3 id="clipboard">clipboard</h3><ul>
+<li>ditto</li>
+</ul>
+<h1 id="Mac_OS">Mac OS</h1><ul>
+<li>Alfred</li>
+<li>iTerm</li>
+<li>Dash<h3 id="Karabiner-Elements_改键工具_比如把capslock_改为backspcace">Karabiner-Elements 改键工具  比如把capslock 改为backspcace</h3><h3 id="Markdown-1">Markdown</h3></li>
+<li><a href="http://zh.mweb.im" target="_blank" rel="external">MWeb</a> 图片导入 表格<h3 id="tilling_windows">tilling windows</h3>Moom<h3 id="pdf">pdf</h3>pdf expert<h1 id="iOS">iOS</h1></li>
+</ul>
+<h2 id="Android">Android</h2></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/">&laquo;</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">&raquo;</a>
+  </nav>
+
+ </div>
+
+        
+
+        
+      </div>
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      <section class="site-overview">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/uploads/avatar.jpg" alt="imagine243" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">imagine243</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">less is more</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">27</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner"> <div class="copyright" >
+  
+  &copy; &nbsp; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="icon-next-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">imagine243</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+ </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+    
+    
+
+  
+
+
+  
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
+
+
+
+
+  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+      if (isMobile()) {
+        FastClick.attach(document.body);
+      }
+    });
+  </script>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/lazyload.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#posts").find('img').lazyload({
+        placeholder: "/images/loading.gif",
+        effect: "fadeIn"
+      });
+    });
+  </script>
+</body>
+</html>
