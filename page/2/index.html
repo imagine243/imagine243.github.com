@@ -166,6 +166,205 @@
           
           
             
+              <a class="post-title-link" href="/2017/03/06/cpp-2-5/" itemprop="url">
+                typedef
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2017-03-06T15:08:56+08:00" content="2017-03-06">
+            2017-03-06
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h1 id="typedef">typedef</h1><p>新标准添加了 using 定义别名<br><img src="/uploads/14887842587187.jpg" alt=""></p>
+<h1 id="auto">auto</h1><p>通过编译器分析表达式所属的类型</p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2017/02/28/cpp-2-4/" itemprop="url">
+                const
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2017-02-28T17:38:14+08:00" content="2017-02-28">
+            2017-02-28
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h1 id="const">const</h1><h1 id="const作用范围">const作用范围</h1><p>默认情况下 const的对象仅在文件内有效， 要做到每个使用了const 对象的文件都能访问到它的初始值，就需要在每个文件中定义同名的const变量。<br>这样就会产生大量的重复定义，解决办法是 在定义前面添加 extern 关键字，这样就只需要定义一次。</p>
+<p><img src="/uploads/14882751985729.jpg" alt=""></p>
+<h1 id="const_引用">const 引用</h1><p>一种引用方式是原本的对象就是常量，引用也是常量，都不可以改变</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> ci = <span class="number">1024</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> &amp;ri = ci;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt; ri&lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+<p>但是原本的对象可以不适常量， 引用可以是常量也可以不是，但是引用和原本对象之间的绑定关系不可以改变，原本对象可以改变。如下图所解释的。</p>
+<p><img src="/uploads/14883392364050.jpg" alt=""></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> ci = <span class="number">1024</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> &amp;ri = ci;</span><br><span class="line">ci = <span class="number">1111</span>;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt; ri&lt;&lt; endl;</span><br></pre></td></tr></table></figure>
+<p>这中间的机制是，原本ci进行了自动转化为const int类型。</p>
+<h1 id="顶层const与底层const">顶层const与底层const</h1><p><img src="/uploads/14887833321005.jpg" alt=""></p>
+<p><img src="/uploads/14887833419019.jpg" alt=""></p>
+<h1 id="constexpr">constexpr</h1><p>constexpr 类型定义一个编译器来验证变凉的值是否是一个常量表达式，关键是在编译期检查。<br>constexpr 可以定义变量和函数。<br>constexpr定义的指针是顶层const。</p>
+<h1 id="decltype">decltype</h1></span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2017/02/27/cpp-2-3/" itemprop="url">
+                复合类型
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2017-02-27T17:42:55+08:00" content="2017-02-27">
+            2017-02-27
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h1 id="复合类型">复合类型</h1><h2 id="引用">引用</h2><p><img src="/uploads/14881886161386.jpg" alt=""></p>
+<h2 id="指针">指针</h2><p><img src="/uploads/14881888319598.jpg" alt=""></p>
+<p><img src="/uploads/14881899630621.jpg" alt=""></p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2017/02/27/cpp-2-1/" itemprop="url">
                 类型转换
               </a>
@@ -708,335 +907,6 @@
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2016/09/03/cpp-file/" itemprop="url">
-                未命名
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2016-09-03T23:16:02+08:00" content="2016-09-03">
-            2016-09-03
-          </time>
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><h2 id="c++_的文件操作">c++ 的文件操作</h2><p>资料 <a href="http://www.cplusplus.com/doc/tutorial/files/" target="_blank" rel="external">http://www.cplusplus.com/doc/tutorial/files/</a></p>
-<p>原来一直分不清c与c＋＋ 对文件的读写的不同，同时对c＋＋ 中文件读写也了解的不够详细，cplusplus 上的这篇文章详细易懂，写一下笔记。</p>
-<h3 id="文件操作类">文件操作类</h3><ul>
-<li>ofstream: Stream class to write on files</li>
-<li>ifstream: Stream class to read from files</li>
-<li><p>fstream: Stream class to both read and write from/to files.</p>
-<p>  // basic file operations<br>  #include <iostream><br>  #include <fstream><br>  using namespace std;</fstream></iostream></p>
-<p>  int main () {</p>
-<pre><code>ofstream myfile<span class="comment">;</span>
-myfile.open ("example.txt")<span class="comment">;</span>
-myfile &lt;&lt; "Writing this to a file.\n"<span class="comment">;</span>
-myfile.close()<span class="comment">;</span>
-return 0<span class="comment">;</span>
-</code></pre><p>  }</p>
-</li>
-</ul>
-<h3 id="打开关闭文件">打开关闭文件</h3><p>open(filename, mode)</p>
-<p>mode :</p>
-<ul>
-<li>ios::in    打开读取的文件</li>
-<li>ios::out    打开写入的文件</li>
-<li>ios::binary    以二进制的方式打开文件</li>
-<li><p>ios::ate    设置初始的指针在文件的末尾，如果没有设置这个，初始的指针在文件的开头<br>ios::app    All 所有的写入操作都会添加在文件的末尾<br>ios::trunc 如果写入的文件已经存在且有内容，原来的内容会被删除写入新的内容。</p>
-<p>  ofstream myfile;<br>  myfile.open (“example.bin”, ios::out | ios::app | ios::binary);</p>
-</li>
-</ul>
-<p>默认情况下：<br>ofstream ios::out<br>ifstream ios::in<br>fstream ios::in | ios::out</p>
-<p>这三个类的构造函数跟open函数有异样的作用</p>
-<pre><code>ofstream myfile <span class="list">(<span class="string">"example.bin"</span>, ios:<span class="keyword">:out</span> | ios::app | ios:<span class="keyword">:binary</span>)</span><span class="comment">;</span>
-</code></pre><p>可以使用is_open() 来检查文件是否成功的打开</p>
-<pre><code><span class="keyword">if</span> (myfile.<span class="keyword">is</span><span class="number">_</span>open()) { <span class="comment">/* ok, proceed with output */</span> }
-</code></pre><p>关闭文件</p>
-<pre><code>myfile.<span class="function"><span class="title">close</span><span class="params">()</span></span>
-</code></pre><h3 id="文本文件">文本文件</h3><pre><code><span class="comment">// writing on a text file</span>
-<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span>
-<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;fstream&gt;</span></span>
-<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;
-
-<span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>{
-  <span class="function">ofstream <span class="title">myfile</span> <span class="params">(<span class="string">"example.txt"</span>)</span></span>;
-  <span class="keyword">if</span> (myfile.is_open())
-  {
-    myfile &lt;&lt; <span class="string">"This is a line.\n"</span>;
-    myfile &lt;&lt; <span class="string">"This is another line.\n"</span>;
-    myfile.close();
-  }
-  <span class="keyword">else</span> <span class="built_in">cout</span> &lt;&lt; <span class="string">"Unable to open file"</span>;
-  <span class="keyword">return</span> <span class="number">0</span>;
-}
-
-<span class="comment">// reading a text file</span>
-<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span>
-<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;fstream&gt;</span></span>
-<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span></span>
-<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;
-
-<span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>{
-  <span class="built_in">string</span> line;
-  <span class="function">ifstream <span class="title">myfile</span> <span class="params">(<span class="string">"example.txt"</span>)</span></span>;
-  <span class="keyword">if</span> (myfile.is_open())
-  {
-    <span class="keyword">while</span> ( getline (myfile,line) )
-    {
-      <span class="built_in">cout</span> &lt;&lt; line &lt;&lt; <span class="string">'\n'</span>;
-    }
-    myfile.close();
-  }
-
-  <span class="keyword">else</span> <span class="built_in">cout</span> &lt;&lt; <span class="string">"Unable to open file"</span>; 
-
-  <span class="keyword">return</span> <span class="number">0</span>;
-}
-</code></pre><h3 id="检查状态">检查状态</h3><ul>
-<li>bad()<br>Returns true if a reading or writing operation fails. For example, in the case that we try to write to a file that is not open for writing or if the device where we try to write has no space left.</li>
-<li>fail()<br>Returns true in the same cases as bad(), but also in the case that a format error happens, like when an alphabetical character is extracted when we are trying to read an integer number.</li>
-<li>eof()<br>Returns true if a file open for reading has reached the end.</li>
-<li>good()<br>It is the most generic state flag: it returns false in the same cases in which calling any of the previous functions would return true. Note that good and bad are not exact opposites (good checks more state flags at once).</li>
-</ul>
-<h3 id="读取写入的位置">读取写入的位置</h3><p>tellg() 和 tellp() 函数 返回值是 streampos类型的</p>
-<p>seekg() 和 seekp()</p>
-<p>seekg ( position );<br>seekp ( position );</p>
-<p>seekg ( offset, direction );<br>seekp ( offset, direction );</p>
-<ul>
-<li>ios::beg    offset counted from the beginning of the stream</li>
-<li>ios::cur    offset counted from the current position</li>
-<li><p>ios::end    offset counted from the end of the stream</p>
-<p>  // obtaining file size<br>  #include <iostream><br>  #include <fstream><br>  using namespace std;</fstream></iostream></p>
-<p>  int main () {</p>
-<pre><code>streampos <span class="keyword">begin</span>,<span class="keyword">end</span>;
-ifstream myfile (<span class="string">"example.bin"</span>, ios<span class="type-annotation">::</span>binary);
-<span class="keyword">begin</span> = myfile.tellg();
-myfile.seekg (<span class="number">0</span>, ios<span class="type-annotation">::</span><span class="keyword">end</span>);
-<span class="keyword">end</span> = myfile.tellg();
-myfile.close();
-cout &lt;&lt; <span class="string">"size is: "</span> &lt;&lt; (<span class="keyword">end</span>-<span class="keyword">begin</span>) &lt;&lt; <span class="string">" bytes.\n"</span>;
-<span class="keyword">return</span> <span class="number">0</span>;
-</code></pre><p>  }</p>
-</li>
-</ul>
-<h3 id="二进制">二进制</h3><pre><code><span class="comment">// reading an entire binary file</span>
-<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span>
-<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;fstream&gt;</span></span>
-<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;
-
-<span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>{
-  streampos size;
-  <span class="keyword">char</span> * memblock;
-
-  <span class="function">ifstream <span class="title">file</span> <span class="params">(<span class="string">"example.bin"</span>, ios::in|ios::binary|ios::ate)</span></span>;
-  <span class="keyword">if</span> (file.is_open())
-  {
-    size = file.tellg();
-    memblock = <span class="keyword">new</span> <span class="keyword">char</span> [size];
-    file.seekg (<span class="number">0</span>, ios::beg);
-    file.read (memblock, size);
-    file.close();
-
-    <span class="built_in">cout</span> &lt;&lt; <span class="string">"the entire file content is in memory"</span>;
-
-    <span class="keyword">delete</span>[] memblock;
-  }
-  <span class="keyword">else</span> <span class="built_in">cout</span> &lt;&lt; <span class="string">"Unable to open file"</span>;
-  <span class="keyword">return</span> <span class="number">0</span>;
-}
-</code></pre><h3 id="buffer和同步">buffer和同步</h3><p>在写入操作时是先写入了一块固定大小的buffer中，当文件关闭或者buffer满了就会写入文件，也可以调用sync() 将buffer写入文件</p>
-</span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2016/08/12/cmake-des/" itemprop="url">
-                cmake_des
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2016-08-12T19:19:32+08:00" content="2016-08-12">
-            2016-08-12
-          </time>
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><h1 id="学习_cmake">学习 cmake</h1></span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2016/08/10/windows-tool/" itemprop="url">
-                windows_tool
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于
-          <time itemprop="dateCreated" datetime="2016-08-10T14:59:19+08:00" content="2016-08-10">
-            2016-08-10
-          </time>
-        </span>
-
-        
-
-        
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody"><h1 id="全平台工具">全平台工具</h1><h3 id="云存储">云存储</h3><ul>
-<li><a href="https://www.jianguoyun.com/" target="_blank" rel="external">坚果云</a> 存储重要资料，个人数据，配置文件</li>
-<li><a href="https://yun.baidu.com" target="_blank" rel="external">百度云</a> 看电影</li>
-</ul>
-<h3 id="Markdown">Markdown</h3><ul>
-<li><a href="http://www.typora.io/" target="_blank" rel="external">typora</a> 功能强大的的Markdown 编辑器 图片导入<h3 id="git_tool">git tool</h3></li>
-<li>SourceTree</li>
-</ul>
-<h1 id="windows_工具">windows 工具</h1><h3 id="visual_assist_x_大番茄vs插件">visual assist x 大番茄vs插件</h3><p>度娘盘／软件／visual assist x／<br>搜索出破解中的的两个dll文件 并替换</p>
-<h3 id="sinppet_tool">sinppet tool</h3><ul>
-<li>PhraseExpress</li>
-</ul>
-<h3 id="clipboard">clipboard</h3><ul>
-<li>ditto</li>
-</ul>
-<h1 id="Mac_OS">Mac OS</h1><ul>
-<li>Alfred</li>
-<li>iTerm</li>
-<li>Dash<h3 id="Karabiner-Elements_改键工具_比如把capslock_改为backspcace">Karabiner-Elements 改键工具  比如把capslock 改为backspcace</h3><h3 id="Markdown-1">Markdown</h3></li>
-<li><a href="http://zh.mweb.im" target="_blank" rel="external">MWeb</a> 图片导入 表格<h3 id="tilling_windows">tilling windows</h3>Moom<h3 id="pdf">pdf</h3>pdf expert<h1 id="iOS">iOS</h1></li>
-</ul>
-<h2 id="Android">Android</h2></span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1075,7 +945,7 @@ cout &lt;&lt; <span class="string">"size is: "</span> &lt;&lt; (<span class="key
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">27</span>
+              <span class="site-state-item-count">30</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1089,7 +959,7 @@ cout &lt;&lt; <span class="string">"size is: "</span> &lt;&lt; (<span class="key
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-count">17</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -1123,7 +993,7 @@ cout &lt;&lt; <span class="string">"size is: "</span> &lt;&lt; (<span class="key
       <div class="footer-inner"> <div class="copyright" >
   
   &copy; &nbsp; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="icon-next-heart"></i>
   </span>

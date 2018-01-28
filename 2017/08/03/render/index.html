@@ -77,7 +77,7 @@
 <meta property="og:image" content="http://yoursite.com/uploads/15017688563938.gif">
 <meta property="og:image" content="http://yoursite.com/uploads/28115843-c9df8ad58696491b88808ec4cc19b694.png">
 <meta property="og:image" content="http://yoursite.com/uploads/15017709376880.jpg">
-<meta property="og:updated_time" content="2017-08-03T14:40:28.000Z">
+<meta property="og:updated_time" content="2017-08-04T05:53:47.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="render">
 <meta name="twitter:description" content="软件渲染在不使用图形Api(例如 OpenGL DirectX)的情况下, 使用图形学的方法渲染出模型.
@@ -249,8 +249,9 @@
 <p><img src="/uploads/15017537260555.png" alt=""></p>
 <p><img src="/uploads/15017537608678.png" alt=""></p>
 <p>有一个二维的向量 x (2,1)<br>还有一个旋转矩阵<br><img src="/uploads/15017541376178.jpg" alt=""></p>
-<p>Ax的效果就是让向量旋转到目的地<br><img src="/uploads/v2-342d39e9f3eb7d964ca3ddfeedf3dfa4_r.jpg" alt="v2-342d39e9f3eb7d964ca3ddfeedf3dfa4"></p>
+<p>Ax的效果就是让向量旋转到目的地<br><img src="/uploads/v2-342d39e9f3eb7d964ca3ddfeedf3dfa4_r.jpg" alt="v2-342d39e9f3eb7d964ca3ddfeedf3dfa4">)</p>
 <p><img src="/uploads/15017544383403.png" alt=""></p>
+<p><a href="http://blog.csdn.net/myan/article/details/647511" target="_blank" rel="external">理解矩阵 一</a><br><a href="http://blog.csdn.net/myan/article/details/649018" target="_blank" rel="external">理解矩阵 二</a><br><a href="http://blog.csdn.net/myan/article/details/1865397" target="_blank" rel="external">理解矩阵 三</a></p>
 <h2 id="齐次坐标">齐次坐标</h2><p>有向量v可以找到一组坐标 （v1，v2, v3)</p>
 <p><img src="/uploads/15017678144223.gif" alt=""></p>
 <p>v = v1a + v2b + v3c    (1)</p>
@@ -264,7 +265,9 @@
 <p><img src="/uploads/28115843-c9df8ad58696491b88808ec4cc19b694.png" alt="28115843-c9df8ad58696491b88808ec4cc19b694"></p>
 <p>摄像机起点到目标点的点位向量是摄像机空间的z’轴<br>up <em> z‘ 得到摄像机空间的x‘轴<br>z’ </em> x‘ 得道摄像机空间的y’轴<br>x‘ y’ z‘ 分别为<br>z’ = cameraZ = Normalize(at - eye)<br>x’ = cameraX = Normalize(Cross(up, cameraZ))<br>y’ = cameraY = Cross(cameraZ, cameraX) </p>
 <p>这样就可以得到从世界空间线性变换到摄像机空间的线性矩阵的线性变换</p>
+<p>$$<br>\left[<br>\begin{matrix}<br>cameraX.x &amp; cameraY.x &amp; cameraZ.x \<br>cameraX.y &amp; cameraY.y &amp; cameraZ.y \<br>cameraX.z &amp; cameraY.z &amp; cameraZ.y<br>\end{matrix}<br>\right]<br>$$</p>
 <p>还有从世界空间到摄像机空间的位移</p>
+<p>$$<br>\left[<br>\begin{matrix}<br>1 &amp; 0 &amp; 0 &amp; eye.x \<br>0 &amp; 1 &amp; 0 &amp; eye.y \<br>0 &amp; 0 &amp; 1 &amp; eye.z \<br>0 &amp; 0 &amp; 0 &amp; 1<br>\end{matrix}<br>\right]<br>$$</p>
 <p>可以得到以下公式</p>
 <p><img src="/uploads/15017709376880.jpg" alt=""></p>
 <h2 id="透视矩阵">透视矩阵</h2><p>规范立方体</p>
@@ -278,6 +281,8 @@
       
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/04/sicp-note/" rel="prev">sicp_note</a>
             
           </div>
 
@@ -345,7 +350,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">27</span>
+              <span class="site-state-item-count">30</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -359,7 +364,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-count">17</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -404,7 +409,7 @@
       <div class="footer-inner"> <div class="copyright" >
   
   &copy; &nbsp; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="icon-next-heart"></i>
   </span>
